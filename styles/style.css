@@ -2,4 +2,48 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --color-principal:#2c3424;
+  --color-secondary:#4c583e;
+  --color-terciary:#768064;
+  --color-fourth:#959581;
+  --color-fifth:#daded8;
+}
+body{
+  background-color: var(--color-fifth);
+}
+a{
+  text-decoration: none;
+}
+/* HEADER */
+.Logo{
+  width: 4em;
+  margin:-0.8em;
+}
+.d-flex, .navtext{
+  margin-right: 5em;
+}
+.form-control, .me-2{
+  width: 16em;
+}
+.navbar, .navbar-expand-lg, .bg-body-tertiary{
+  background-image: linear-gradient(to bottom,#2c3424,#4c583e); 
+}
+.nav-item, .navbar-brand, .nav-link, .active, .nav-item, .navtext{
+  color: var(--color-fifth);
+}
+.btn, .btn-outline-success{
+  background-color: var(--color-terciary);
+  color:var(--color-fifth);
+  border: none;
+}
+.btn:hover, .btn-outline-success:hover{
+  background-color: var(--color-fifth);
+  color: var(--color-principal);
+}
+.BtnContacto{
+  background-color: var(--color-principal);
+  color: var(--color-fifth);
+  padding: 0.4em;
+  position: relative;
+  left: 5em;
 }
