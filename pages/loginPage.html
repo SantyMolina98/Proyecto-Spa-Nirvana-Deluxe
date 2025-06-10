@@ -52,20 +52,24 @@
   <main>
     <div class="CardIS">
       <h3>INICIAR SESIÓN</h3>
-      <p>¿Sos nuevo/a? <a href="./registroPage.html">REGISTRATE</a></p>
+      <p class="TextCard">¿Sos nuevo/a? <a href="./registroPage.html">REGISTRATE</a></p>
       <div class="FormInicioSesion">
         <form>
-          <label for="usuario" name="usuario" >Usuario</label>
-          <input type="text" id="usuario" minlength="3" maxlength="15" placeholder="Ingrese su nombre de usuario" required><br>
-          <label for="contraseña" name="contraseña" >Contraseña</label>
-          <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required><br>
-          <a href="#">¿Olvidó su contraseña?</a> <br>
-          <input type="checkbox" name="recuerdame" id="recuerdame"><label for="recuerdame">Recuerdame</label> <br>
-          <a href="./registroPage.html"><input type="button" value="INGRESAR"></a>
+          <label for="usuario" name="usuario" class="TextCard">Usuario</label>
+          <input type="text" id="usuario" minlength="3" maxlength="15" size="25" placeholder="Ingrese su nombre de usuario" required><br> <br>
+          <label for="contraseña" name="contraseña" class="TextCard">Contraseña</label>
+          <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required> <br>
+          <input type="checkbox" name="recuerdame" id="recuerdame"><label for="recuerdame" >Recordar usuario y contraseña</label> <br> <br>
+          <a href="#">¿Olvidó su contraseña?</a> <br> <br>
+          
+          <a href="./registroPage.html"><input type="button" class="BotonL" value="INGRESAR"></a>
         </form>
       </div>
-      <h4>O</h4>
-      <a href="https://myaccount.google.com/"><input type="button" value="Ingresá con Google"></a>
+      <h4>O podés</h4>
+      <div class="ContainerBTNG">
+        <a href="https://myaccount.google.com/" class="BtnGoogle"><input type="button" class="BotonL" value="Ingresar con        "><img src="../Assets/Img/Logo-Google.png" alt="" width="100%" height="100%"></a>
+      </div>
+      
     </div>
   </main>
   <footer></footer>
