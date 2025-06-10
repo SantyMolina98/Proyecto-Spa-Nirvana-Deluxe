@@ -5,6 +5,7 @@
   --color-botonL:linear-gradient(to bottom,rgb(115, 214, 153), rgb(195, 230, 210));
   --color-hoverBL:rgb(0, 119, 255);
   --color-texthbl:white;
+  --color-input:rgb(43, 110, 71);
 }
 body{
   min-width: 100vw;
@@ -65,4 +66,29 @@ main{
 .BotonL:hover{
   background: var(--color-hoverBL);
   color: var(--color-texthbl);
+}
+#usuario, #contraseña, #Nombre, #Apellido, #newuser, #E-mail, #firsttelefono, #telefono, #domicilio, #selectciudad, #cp, #contraseña2{
+  border-radius: 0.5em;
+  padding: 0.1em;
+  border: 0.1em solid var(--color-input);
+}
+/* SECCIÓN REGISTRO */
+.mainRegistro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.mainRegistro h2{
+  width: 100%;
+  text-align: center;
+}
+.CardRegistro{
+  background-image: url(../Assets/Img/Fondo-registro.png);
+  background-size: cover;
+}
+.BtnRegistro{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

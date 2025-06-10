@@ -50,12 +50,13 @@
     </nav>
 </header>
   <main>
+    <div class="mainRegistro">
     <h2>CREAR NUEVO USUARIO</h2>
-    <div>   
+    <div class="CardRegistro">   
 
     <h4>Ahora ingrese sus datos</h4> <br>
-    <form >
-      <label for="Nombre" name="Nombre" class="TextL">Nombre</label>
+    <form class="FormRegistro" >
+      <label for="Nombre" name="Nombre" class="TextCard">Nombre</label>
       <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su primer nombre" minlength="3" maxlength="12" size="25" required> <br>
       <label for="Apellido" name="Apellido" class="TextL">Apellido</label>
       <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su primer apellido" minlength="3" maxlength="12" size="25" required> <br>
@@ -100,11 +101,14 @@
       <label for="cp">Código Postal</label>
       <input type="text" name="cp" id="cp" placeholder="----" size="4" maxlength="5"> <br>
       <label for="contraseña2" class="TextL">Escriba una contraseña</label>
-      <input type="password" name="contraseña" id="contraseña2" maxlength="20" size="25" placeholder="Escriba aquí su contraseña" required> <br>
+      <input type="password" name="contraseña2" id="contraseña2" maxlength="20" size="25" placeholder="Escriba aquí su contraseña" required> <br>
+      <div class="BtnRegistro">
+        <a href="./PaginaError.html"><input type="button" class="BotonL" name="Agregar-Usuario" class="BotonB" value="REGISTRARME"></a>
+      </div>
       
-      <a href="./PaginaError.html"><input type="button" name="Agregar-Usuario" class="BotonB" value="REGISTRARME"></a>
 
     </form>
+    </div>
     </div>
   </main>
   <footer></footer>
