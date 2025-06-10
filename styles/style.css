@@ -45,5 +45,34 @@ a{
   color: var(--color-fifth);
   padding: 0.4em;
   position: relative;
-  left: 5em;
+  left: 1em;
+}
+/* LOGO DE LOGIN */
+svg{
+  width: 2.3em;
+  margin-right: -1em;
+}
+.TextEmerLogin{
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 10vh;
+  right: 35vh;
+}
+.TextEmerLogin li{
+  width: 5em;
+  height: 5vh;
+  text-align: center;
+  border: 1px solid var(--color-principal);
+  border-radius: 2vh 0.3vh ;
+  background-color: var(--color-fifth);
+  color: var(--color-secondary);
+}
+.TextEmerLogin li:hover{
+  background-color: #235699;
+  color: white;
+}
+.nav-item:hover .TextEmerLogin{
+  display: block;
+  
 }
