@@ -1,7 +1,10 @@
 *{
-  --color-card:linear-gradient(to bottom,green,rgb(38, 184, 50));
+  --fondo-card:url(../Assets/Img/Paisaje-fondo-card.png);
   --color-text:black;
   --color-a:blue;
+  --color-botonL:linear-gradient(to bottom,rgb(115, 214, 153), rgb(195, 230, 210));
+  --color-hoverBL:rgb(0, 119, 255);
+  --color-texthbl:white;
 }
 body{
   min-width: 100vw;
@@ -20,10 +23,46 @@ main{
 }
 .CardIS{
   padding: 1em;
-  background-image: var(--color-card);
+  
+  background-image: var(--fondo-card);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   display: flex;
   flex-direction: column;
   color: var(--color-text);
   text-align: center;
   align-items: center;
+}
+.CardIS h3{
+  font-size: 2em;
+}
+.FormInicioSesion, form{
+  width: 100%;
+  font-size: 1.1em; 
+}
+.ContainerBTNG{
+  width: 100%;
+  position: relative;
+}
+.BtnGoogle img{
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  right: 7em;
+}
+.TextCard{
+  background-color: rgba(80, 172, 103, 0.527);
+  padding: 0.1em;
+  border-radius: 0.5em;
+  font-weight: 600;
+}
+.BotonL{
+  padding: 0.2em;
+  border-radius: 0.7em;
+  background-image: var(--color-botonL);
+}
+.BotonL:hover{
+  background: var(--color-hoverBL);
+  color: var(--color-texthbl);
 }
