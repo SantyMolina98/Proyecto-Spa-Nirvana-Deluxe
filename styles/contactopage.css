@@ -4,3 +4,43 @@
     box-sizing: border-box;
 }
 
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#Containerformulario{
+  background-color: yellow;
+display: flex;
+}
+
+#FormContacto{ 
+    color:black 
+}
+
+.mb-3{ 
+  background-color: blanchedalmond;
+
+}
+
+.form-label{
+  background-color: blueviolet;
+}
+
+.form-control{
+  background-color: blue;
+}
+
+.exampleFormControlInput1{
+  background-color: brown;
+}
+
+.exampleFormControlTextarea1{
+  background-color: aqua;
+}
+
+#ContainerMapa{
+  background-color: blue;
+  display: flex;
+}
