@@ -1,7 +1,12 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
 }
 
 
@@ -19,21 +24,28 @@ display: flex;
     color:black 
 }
 
-.mb-3{ 
-  background-color: blanchedalmond;
+
+#Bordercaja{
+  border: #4c583e solid 1px;
+  padding: 15px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
 
 }
-
 .form-label{
-  background-color: blueviolet;
+  font-weight: 800;
 }
 
 .form-control{
-  background-color: blue;
+  width: 100%;
+  /* background-color:#584738; */
+  
 }
 
-.exampleFormControlInput1{
-  background-color: brown;
+#exampleFormControlInput1{
+ border:#4c583e solid 1px;
+ margin: 5px;
 }
 
 .exampleFormControlTextarea1{
@@ -41,6 +53,12 @@ display: flex;
 }
 
 #ContainerMapa{
-  background-color: blue;
   display: flex;
+}
+
+#enviarboton{
+  width: 50%;
+  justify-content: center;
+align-items: center;
+margin: 50px;
 }
