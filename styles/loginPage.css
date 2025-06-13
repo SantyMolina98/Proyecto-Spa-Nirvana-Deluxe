@@ -6,6 +6,7 @@
   --color-fifth:#959581;
   --color-sixth:#f1eada;
   --color-input:rgb(82, 58, 11);
+  --color-input2:#745c3d;
   --color-a:#745e16;
 }
 body{
@@ -25,9 +26,6 @@ main{
   text-align: center;
 }
 .CardIS{
-  /* background-image: url(../Assets/Img/Fondo-Login.png);
-  background-position: auto;
-  background-size: cover; */
   background-color: var(--color-fourth);
   padding: 1em;
   border-radius: 1em;
@@ -71,15 +69,84 @@ main{
 }
 /* SECCIÓN REGISTRO */
 .mainRegistro{
-  width: 100%;
+  width: 100vw;
+  height: auto;
+  padding: 1em;
+  display:flex ;
+  flex-wrap: wrap;
+
 }
 .CardRegistro{
-  padding-left: 1em;
   width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
   text-align: start;
-}
-.CardRegistro h4{
-  width: 100%;
-  text-align: start;
+  justify-content: center;
   
+}
+.ContainerRegistro h4{
+  width: 100%;
+  text-align: center;
+}
+.mainRegistro h2{
+  width: 100%;
+  height: 13vh;
+  margin: 0;
+  text-align: center;
+  color: var(--color-principal);
+
+}
+.ContainerRegistro{
+  width: auto;
+  padding: 1em;
+  margin-top: 0;
+  background-color: var(--color-terciary);
+  border-radius: 1em;
+  
+}
+#Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 80%;
+}
+.TelefonoF{
+  width: 100%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 10%;
+}
+
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 70%;
+}
+.TextReg{
+  font-size:large ;
+  font-weight: 500;
+}
+.BotonR{
+  margin-top: 1em;
+  background-color: var(--color-fourth);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
+}
+.BotonR:hover{
+  margin-top: 1em;
+  background-color: var(--color-principal);
+  color: var(--color-fourth);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
 }
