@@ -59,13 +59,528 @@ main{
 .BTNgoogle{
   width: 100%;
   position: relative;
+  
+
 }
 .logoG{
   width: 1.25em;
   height: 1.25em;
   position: absolute;
-  top: 0.1em;
-  right: 10.2em;
+  
+  
+}
+@media (min-width:100px) and (max-width:320px){
+  .TitleLOGIN{
+    font-size: 1em;
+  }
+  .TextSecLOGIN{
+    font-size: 0.6em;
+  }
+  .FormInicioSesion form{
+    text-align: start;
+  }
+  .ForgivePassword{
+    width: 100%;
+  }
+  .TextCard{
+    font-size: 0.7em;
+  }
+  #usuario,#contraseña{
+    width: 100%;
+    padding: 0.06em;
+    border-radius: 0.5em;
+    border: 0.1em solid var(--color-input);
+    font-size: 0.7em;
+  }
+  .SectorBTN{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .BotonL{
+    width: 100%;
+    padding: 0.1em;
+    border-radius: 0.5em;
+    border:0.1em solid var(--color-principal);
+    font-size: 0.7em;
+  }
+  .logoG{
+    width: 1em;
+    height: 1em;
+    left: 13px;
+    top: 5px;
+  }
+}
+@media (min-width:321px) and (max-width:375px){
+  .TitleLOGIN{
+    font-size: 1em;
+  }
+  .TextSecLOGIN{
+    font-size: 0.6em;
+  }
+  .FormInicioSesion form{
+    text-align: start;
+  }
+  .ForgivePassword{
+    width: 100%;
+  }
+  .TextCard{
+    font-size: 0.7em;
+  }
+  #usuario,#contraseña{
+    width: 100%;
+    padding: 0.06em;
+    border-radius: 0.5em;
+    border: 0.1em solid var(--color-input);
+    font-size: 0.7em;
+  }
+  .SectorBTN{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .BotonL{
+    width: 100%;
+    padding: 0.1em;
+    border-radius: 0.5em;
+    border:0.1em solid var(--color-principal);
+    font-size: 0.7em;
+  }
+  .logoG{
+    width: 1em;
+    height: 1em;
+    left: 13px;
+    top: 5px;
+  }
+}
+@media screen and (min-width:376px), screen and (orientation: landscape){
+  .TitleLOGIN{
+    font-size: 1.1em;
+  }
+  .TextSecLOGIN{
+    font-size: 0.8em;
+  }
+  .FormInicioSesion form{
+    text-align: start;
+  }
+  .ForgivePassword{
+    width: 100%;
+  }
+  .TextCard{
+    font-size: 0.9em;
+  }
+  #usuario,#contraseña{
+    width: 100%;
+    padding: 0.1em;
+    border-radius: 0.5em;
+    border: 0.1em solid var(--color-input);
+    font-size: 0.8em;
+  }
+  .SectorBTN{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .BotonL{
+    width: 90%;
+    padding: 0.1em;
+    border-radius: 0.5em;
+    border:0.1em solid var(--color-principal);
+    font-size: 0.8em;
+  }
+  .logoG{
+    width: 1.1em;
+    height: 1.1em;
+    left: 25px;
+    top: 4px;
+  }
+}
+@media  screen and (min-width:426px), screen and (orientation: landscape) {
+  .CardIS{
+    width: 70%;
+  }
+  .TitleLOGIN{
+    font-size: 1.4em;
+  }
+  .TextSecLOGIN{
+    font-size: 1em;
+  }
+  .FormInicioSesion form{
+    text-align: start;
+  }
+  .ForgivePassword{
+    margin-top: 1em;
+    width: 100%;
+  }
+  .TextCard{
+    font-size: 1.1em;
+  }
+  #usuario,#contraseña{
+    width: 100%;
+    padding: 0.15em;
+    border-radius: 0.5em;
+    border: 0.12em solid var(--color-input);
+    font-size: 1em;
+  }
+  .SectorBTN{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .BotonL{
+    width: 90%;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    border:0.1em solid var(--color-principal);
+    font-size: 0.9em;
+  }
+  .logoG{
+    width: 1.18em;
+    height: 1.18em;
+    left: 40px;
+    top: 4px;
+  }
+}
+@media  screen and (min-width:460px), screen and (orientation: landscape) {
+  .CardIS{
+    width: 70%;
+  }
+  .TitleLOGIN{
+    font-size: 1.4em;
+  }
+  .TextSecLOGIN{
+    font-size: 1em;
+  }
+  .FormInicioSesion form{
+    text-align: start;
+  }
+  .ForgivePassword{
+    margin-top: 1em;
+    width: 100%;
+  }
+  .TextCard{
+    font-size: 1.1em;
+  }
+  #usuario,#contraseña{
+    width: 100%;
+    padding: 0.15em;
+    border-radius: 0.5em;
+    border: 0.12em solid var(--color-input);
+    font-size: 1em;
+  }
+  .SectorBTN{
+    width: 100%;
+    
+  }
+  .BTNgoogle{
+    position: relative;
+  }
+  .BotonL{
+    min-width:80%;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border:0.1em solid var(--color-principal);
+    font-size: 0.9em;
+  }
+  .logoG{
+    position: absolute;
+    width: 1.22em;
+    height: 1.22em;
+    left: 60px;
+    
+    top: 5px;
+   
+  }
+}
+@media screen and (min-width:462px), screen and (orientation: landscape) {
+  .logoG{
+    position: absolute;
+    width: 1.22em;
+    height: 1.22em;
+    left: 55px;
+    
+    top: 5px;
+   
+  }
+}
+@media screen and (min-width:472px), screen and (orientation: landscape) {
+  .logoG{
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    left: 55px;
+    
+    top: 8px;
+   
+  }
+}
+@media screen and (min-width:492px), screen and (orientation: landscape) {
+  .logoG{
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    left: 65px;
+    
+    top: 8px;
+   
+  }
+}
+@media screen and (min-width:522px), screen and (orientation: landscape) {
+  .logoG{
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    left: 65px;
+    
+    top: 8px;
+   
+  }
+}
+@media screen and (min-width:542px), screen and (orientation: landscape) {
+  .logoG{
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    left: 65px;
+    
+    top: 8px;
+   
+  }
+}
+@media screen and (min-width:572px), screen and (orientation: landscape) {
+  .CardIS{
+    width: 80%;
+  }
+  .logoG{
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    left: 75px;
+    
+    top: 8px;
+   
+  }
+}
+@media screen and (min-width:592px), screen and (orientation: landscape) {
+  .BotonL{
+    width: 70%;
+  }
+  .logoG{
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    left: 85px;
+    
+    top: 8px;
+   
+  }
+}
+@media  screen and (min-width:641px), screen and (orientation: landscape) {
+  .CardIS{
+    width: 60%;
+  }
+  .TitleLOGIN{
+    font-size: 1.4em;
+  }
+  .TextSecLOGIN{
+    font-size: 1em;    
+  }
+
+  .FormInicioSesion form{
+    text-align: start;
+  }
+  .ForgivePassword{
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+  }
+  .TextCard{
+    font-size: 1.1em;
+  }
+  #usuario,#contraseña{
+    width: 100%;
+    padding: 0.15em;
+    border-radius: 0.5em;
+    border: 0.12em solid var(--color-input);
+    font-size: 1em;
+  }
+  .SectorBTN{
+    width: 100%;
+    display: flex;
+  }
+  .BotonL{
+    font-size: 1.1em;
+    width: 50%;
+   
+  }
+}
+@media screen and (min-width:768px), screen and (orientation: landscape) {
+  main .CardIS{
+    width: 80%;
+  }
+  .CardIS .TitleLOGIN{
+    font-size: 1.8em;
+  }
+  .CardIS .TextSecLOGIN{
+    font-size: 1em;
+  }
+  .FormInicioSesion .TextCard{
+    font-size: 1.1em;
+  }
+  .FormInicioSesion #usuario{
+    font-size: 1em;
+  }
+  .FormInicioSesion #contraseña{
+    font-size: 1em;
+  }
+  .SectorBTN{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }  
+  .BTNgoogle{
+    width:50%;
+  }
+  .SectorBTN .BotonL{
+    width: 60%;
+    padding: 0.3em;
+    font-weight: 400;
+    font-size: 1em;
+  }
+  .logoG{
+    position: absolute;
+    left: 50px;
+  }
+}
+@media screen and (min-width:1024px), screen and (orientation: landscape) {
+  main .CardIS{
+    width: 50%;
+  }
+  .CardIS .TitleLOGIN{
+    font-size: 1.8em;
+  }
+  .TextSecLOGIN{
+    font-size: 1.1em;
+  }
+  .TextCard{
+    font-size: 1.3em;
+  }
+  #usuario, #contraseña{
+    font-size: 1.2em;
+  }
+  .SectorBTN{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }  
+  .BTNgoogle{
+    width: 300px;
+  }
+  .BotonL{
+    width: 60%;
+    padding: 0.3em;
+    font-weight: 400;
+  }
+  .logoG{
+    position: absolute;
+    left: 50px;
+  }
+}
+
+@media screen and (min-width:1440px), screen and (orientation: landscape){
+  body{
+    width: 100vw;
+  }
+  body main{
+    width: 100%;
+  }
+  main .CardIS{
+    width: 50%;
+    margin-top: 2em;
+  }
+  main .CardIS .TitleLOGIN{
+    font-size: 2.1em;
+  }
+  main .CardIS .TextSecLOGIN{
+    font-size: 1.3em;
+  }
+  main .FormInicioSesion .TextCard{
+    font-size: 1.5em;
+  }
+  .CardIS .FormInicioSesion #usuario{
+    font-size: 1.4em;
+    width: 90%;
+  }
+  .CardIS .FormInicioSesion #contraseña{
+    font-size: 1.4em;
+    width: 90%;
+  }
+  .CardIS .SectorBTN{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }  
+  .CardIS .SectorBTN .BTNgoogle{
+    width: 350px;
+  }
+  .CardIS .SectorBTN .BTNgoogle .BotonL{
+    padding: 0.3em;
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+  main .CardIS .SectorBTN .BTNgoogle .logoG{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    left: 60px;
+    
+  }
+}
+@media screen and (min-width:2560px), screen and (orientation: landscape){
+  main .CardIS{
+    width: 50%;
+    margin-top: 2em;
+  }
+  .CardIS .TitleLOGIN{
+    font-size: 3em;
+  }
+  .CardIS .TextSecLOGIN{
+    font-size: 2em;
+  }
+  .FormInicioSesion .TextCard{
+    font-size: 2.2em;
+  }
+  .FormInicioSesion #usuario{
+    font-size: 2.1em;
+    width: 90%;
+  }
+  .FormInicioSesion #contraseña{
+    font-size: 2.1em;
+    width: 90%;
+  }
+  .CardIS .SectorBTN{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }  
+  .SectorBTN .BTNgoogle{
+    width: 500px;
+  }
+  .SectorBTN .BTNgoogle .BotonL{
+    font-size:2em ;
+    padding: 0.3em;
+    font-weight: 300;
+  }
+  .SectorBTN .BTNgoogle .logoG{
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    left: 70px;
+  }
 }
 /* SECCIÓN REGISTRO */
 .mainRegistro{
