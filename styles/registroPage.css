@@ -1,0 +1,450 @@
+*{
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#ebd5b6;
+  --color-fifth:#959581;
+  --color-sixth:#f1eada;
+  --color-btn:#cea878;
+  --color-input2:#745c3d;
+  --color-a:#c59143;
+}
+main{
+  width: 100vw;
+  height: auto;
+ 
+  display:flex ;
+  flex-wrap: wrap;
+  background-color: var(--color-fourth);
+}
+main h2{
+  width: 100%;
+  color: var(--color-principal);
+}
+.CardRegistro{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: center;
+  
+}
+.ContainerRegistro h4{
+  width: 100%;
+  text-align: center;
+}
+.ContainerRegistro{
+  width: auto;
+  padding: 1em;
+  margin-top: 0;
+  background-color: var(--color-a);
+  border-radius: 1em;
+  
+}
+#Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 80%;
+}
+.TelefonoF{
+  width: 100%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 10%;
+}
+
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 70%;
+}
+.TextReg{
+  font-size:large ;
+  font-weight: 500;
+}
+.BotonR{
+  margin-top: 1em;
+  background-color: var(--color-btn);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
+}
+.BotonR:hover{
+  margin-top: 1em;
+  background-color: var(--color-principal);
+  color: var(--color-fourth);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
+}
+/* responsive */
+@media screen and (min-width:100px), screen and (max-width:320px){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main h2{
+    font-size: 1.3em;
+  }
+  main .CardRegistro{
+    width:90% ;
+   
+  }
+  .ContainerRegistro h4{
+    font-size: 1.1em;
+  }
+  .TextReg{
+    font-size: 0.9em;
+  }
+  #Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+    font-size: 0.8em;
+    width: 100%;
+  }
+  .TelefonoF{
+  width: 100%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.1em solid var(--color-input2);
+  width: 15%;
+  font-size: 0.8em;
+}
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.1em solid var(--color-input2);
+  font-size: 0.8em;
+  width: 85%;
+}
+.ContainerRegistro .BtnRegistro{
+  width: 100%;
+  display: flex;
+ justify-content: center;
+}
+.BtnRegistro .BotonR{
+  font-size: 0.9em;
+  width: 250px;
+}
+}
+@media screen and (min-width:321px), screen and (orientation: landscape){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main h2{
+    font-size: 1.35em;
+  }
+  main .CardRegistro{
+    width:90% ;
+   
+  }
+  .ContainerRegistro h4{
+    font-size: 1.15em;
+  }
+  .TextReg{
+    font-size: 0.95em;
+  }
+  #Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+    font-size: 0.85em;
+    width: 100%;
+  }
+  .TelefonoF{
+  width: 100%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  width: 15%;
+  font-size: 0.85em;
+}
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  font-size: 0.85em;
+  width: 85%;
+}
+.ContainerRegistro .BtnRegistro{
+  width: 100%;
+  display: flex;
+ justify-content: center;
+}
+.BtnRegistro .BotonR{
+  font-size: 0.95em;
+  width: 300px;
+}
+}
+@media screen and (min-width:425px), screen and (orientation: landscape){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main h2{
+    font-size: 1.4em;
+  }
+  main .CardRegistro{
+    width:90% ;
+   
+  }
+  .ContainerRegistro h4{
+    font-size: 1.2em;
+  }
+  .TextReg{
+    font-size: 1em;
+  }
+  #Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+    font-size: 0.9em;
+    width: 100%;
+  }
+  .TelefonoF{
+  width: 100%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  width: 15%;
+  font-size: 0.9em;
+}
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  font-size: 0.9em;
+  width: 85%;
+}
+.ContainerRegistro .BtnRegistro{
+  width: 100%;
+  display: flex;
+ justify-content: center;
+}
+.BtnRegistro .BotonR{
+  font-size: 1em;
+  width: 300px;
+}
+}
+@media screen and (min-width:768px), screen and (orientation: landscape){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main h2{
+    font-size: 1.45em;
+  }
+  main .CardRegistro{
+    width:85% ;
+   
+  }
+  .ContainerRegistro h4{
+    font-size: 1.25em;
+  }
+  .TextReg{
+    font-size: 1.1em;
+  }
+  #Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+    font-size: 1em;
+    width: 100%;
+  }
+  .TelefonoF{
+  width: 100%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  width: 15%;
+  font-size: 1em;
+}
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  font-size: 1em;
+  width: 85%;
+}
+.ContainerRegistro .BtnRegistro{
+  width: 100%;
+  display: flex;
+ justify-content: center;
+}
+.BtnRegistro .BotonR{
+  font-size: 1.1em;
+  width: 300px;
+}
+}
+@media screen and (min-width:1024px), screen and (orientation: landscape){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main h2{
+    font-size: 1.45em;
+  }
+  main .CardRegistro{
+    width:85% ;
+   
+  }
+  .ContainerRegistro h4{
+    font-size: 1.25em;
+  }
+  .TextReg{
+    font-size: 1.1em;
+  }
+  #Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+    font-size: 1em;
+    width: 90%;
+  }
+  .TelefonoF{
+  width: 90%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  width: 15%;
+  font-size: 1em;
+}
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  font-size: 1em;
+  width: 85%;
+}
+.ContainerRegistro .BtnRegistro{
+  width: 100%;
+  display: flex;
+ justify-content: center;
+}
+.BtnRegistro .BotonR{
+  font-size: 1.2em;
+  width: 250px;
+}
+}
+@media screen and (min-width:1440px), screen and (orientation: landscape){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main h2{
+    font-size: 1.55em;
+  }
+  main .CardRegistro{
+    width:85% ;
+   
+  }
+  .ContainerRegistro h4{
+    font-size: 1.3em;
+  }
+  .TextReg{
+    font-size: 1.15em;
+  }
+  #Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+    font-size: 1.1em;
+    width: 90%;
+  }
+  .TelefonoF{
+  width: 90%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  width: 15%;
+  font-size: 1.1em;
+}
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  font-size: 1.1em;
+  width: 85%;
+}
+.ContainerRegistro .BtnRegistro{
+  width: 100%;
+  display: flex;
+ justify-content: start;
+}
+.BtnRegistro .BotonR{
+  font-size: 1.2em;
+  width: 250px;
+}
+}
+@media screen and (min-width:2560px), screen and (orientation: landscape){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main h2{
+    font-size: 1.55em;
+  }
+  main .CardRegistro{
+    width:50% ;
+    
+  }
+  .ContainerRegistro{
+    padding: 1em;
+  }
+  .ContainerRegistro h4{
+    font-size: 1.3em;
+  }
+  .TextReg{
+    font-size: 1.15em;
+  }
+  #Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
+    font-size: 1.1em;
+    width: 90%;
+  }
+  .TelefonoF{
+  width: 90%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  width: 15%;
+  font-size: 1.1em;
+}
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  font-size: 1.1em;
+  width: 85%;
+}
+.ContainerRegistro .BtnRegistro{
+  width: 100%;
+  display: flex;
+ justify-content: start;
+}
+.BtnRegistro .BotonR{
+  font-size: 1.2em;
+  width: 200px;
+}
+}
