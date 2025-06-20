@@ -7,6 +7,7 @@
   --color-terciary:#B59E7D;
   --color-fourth:#959581;
   --color-fifth:#f1eada;
+  --color-sixth:#f3d48a;
 }
 body{
   background-color: var(--color-fifth);
@@ -106,27 +107,47 @@ footer{
   justify-content: space-between;
   width: 100%;
 }
+footer a{
+  color: var(--color-sixth);
+}
 .Columna1{
   width: 25%;
   display: flex;
   flex-wrap: wrap;
 }
+.Columna1 h4{
+  margin: 0;
+  
+}
 .LogoFooter{
-  height: 10em;
+  height: 11em;
   width: 10em;
 }
 .Seccion2Col1{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 0.5em;
   width: 50%;
 }
 .backup{
   width: 100%;
+  margin-top: 0.5em;
 }
 .Columna2{
   width: 40%;
+  margin: 0;
+  
+  display: flex;
+  flex-direction: column;
+  
+  text-align: center;
+}
+.TextFooter{
+  margin-top: 0;
 }
 .Columna3{
   width: 35%;
+  
 }
