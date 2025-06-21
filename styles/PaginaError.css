@@ -1,23 +1,20 @@
-:root{
+*{
     margin: 0;
     padding: 0;
 
-    --white: #f2f5f5;
-    --black: #121212;
-    --blue: #308bd1;
-    --gray: #959695;
+    --color-sixth:#f1eada;
+    --color-input:rgb(82, 58, 11);
 }
 
-body{
+main{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
-    color: var(--white);
-    background-color: var(--black);
 }
+
 
 .error_container{
     max-width: 800px;
@@ -51,7 +48,7 @@ P:last-of-type{
 }
 
 p:nth-of-type(2){
-    color: var(--blue);
+    color: var(--color-input);
     animation: bounce 1.2s 1.8s linear forwards;
     opacity: 0;
 }
@@ -60,15 +57,9 @@ p:nth-of-type(2){
     font-size: 1.5rem;
     font-weight: 700;
     pad: 0 3%;
+    
 }
 
-.error_description{
-    font-size: 0.9rem;
-    text-align: justify;
-    line-height: 1.6;
-    padding: 0 10%;
-    color: var(--gray);
-}
 
 .action{
     font: inherit;
@@ -76,8 +67,8 @@ p:nth-of-type(2){
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--color-input);
+    color: var(--color-sixth);
 }
 
 .action:hover{
@@ -117,4 +108,4 @@ p:nth-of-type(2){
         transform: rotateZ(45deg);
         opacity: 1;
     }
-}
+} 
