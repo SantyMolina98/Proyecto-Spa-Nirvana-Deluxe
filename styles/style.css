@@ -1,47 +1,60 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --color-principal:#584738;
-  --color-secondary:#4c583e;
-  --color-terciary:#B59E7D;
-  --color-fourth:#959581;
-  --color-fifth:#f1eada;
-  --color-sixth:#f3d48a;
+
+  --color-principal: #584738;
+  --color-secondary: #4c583e;
+  --color-terciary: #b59e7d;
+  --color-fourth: #959581;
+  --color-fifth: #f1eada;
 }
-body{
+body {
   background-color: var(--color-fifth);
 }
-a{
+a {
   text-decoration: none;
 }
 /* HEADER */
-.Logo{
+.Logo {
   width: 4em;
-  margin:-0.8em;
+  margin: -0.8em;
 }
-.d-flex, .navtext{
-  margin-right: 2em;
+
+.d-flex,
+.navtext {
+  margin-right: 5em;
+
 }
-.form-control, .me-2{
+.form-control,
+.me-2 {
   width: 16em;
 }
-.navbar, .navbar-expand-lg, .bg-body-tertiary{
-  background-image: linear-gradient(to bottom,#2c3424,#4c583e); 
+.navbar,
+.navbar-expand-lg,
+.bg-body-tertiary {
+  background-image: linear-gradient(to bottom, #2c3424, #4c583e);
 }
-.nav-item, .navbar-brand, .nav-link, .active, .nav-item, .navtext{
+.nav-item,
+.navbar-brand,
+.nav-link,
+.active,
+.nav-item,
+.navtext {
   color: var(--color-fifth);
 }
-.btn, .btn-outline-success{
+.btn,
+.btn-outline-success {
   background-color: var(--color-terciary);
-  color:var(--color-fifth);
+  color: var(--color-fifth);
   border: none;
 }
-.btn:hover, .btn-outline-success:hover{
+.btn:hover,
+.btn-outline-success:hover {
   background-color: var(--color-principal);
   color: var(--color-fifth);
 }
-.BtnContacto{
+.BtnContacto {
   background-color: var(--color-principal);
   color: var(--color-fifth);
   padding: 0.4em;
@@ -49,53 +62,57 @@ a{
  
 }
 /* LOGO DE LOGIN */
-svg{
+svg {
   width: 2.3em;
   margin-right: -1em;
 }
-.TextEmerLogin{
+.TextEmerLogin {
   display: none;
   position: absolute;
   list-style: none;
   top: 10vh;
   right: 35vh;
 }
-.TextEmerLogin li{
+.TextEmerLogin li {
   width: 5em;
   height: 5vh;
   text-align: center;
   border: 1px solid var(--color-principal);
-  border-radius: 2vh 0.3vh ;
+  border-radius: 2vh 0.3vh;
   background-color: var(--color-fifth);
   color: var(--color-secondary);
 }
-.TextEmerLogin li:hover{
+.TextEmerLogin li:hover {
   background-color: #235699;
   color: white;
 }
-.nav-item:hover .TextEmerLogin{
+.nav-item:hover .TextEmerLogin {
   display: block;
-  
 }
 
 /* MAIN */
-article{
-  margin: 40px;
+article {
   border-bottom: 1px solid var(--color-principal);
 }
 
-h2, h4, p{
-  margin: 20px;
+h2,
+h4,
+p {
+  margin: 20px 30px;
   text-align: center;
 }
 
-.img{
+.img {
   width: 20rem;
   border-radius: 3rem;
 }
 
 .contenedor {
   margin: 20px;
+}
+
+.flex {
+  display: flex;
 }
 
 /* FOOTER */
@@ -160,174 +177,6 @@ footer a{
   width: 35%;
 }
 
-@media screen and (min-width:290px), screen and (max-width:320px){
-  body{
-    width:100%;
-  }
-  footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .Columna1{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .Columna1 h4{
-    font-size: 1.1em;
-    width: 100%;
-  }
-  .LogoFooter{
-    width: 80px;
-    height: 80px;
-  }
-  .Seccion2Col1{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .RedesF{
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .ImgRedesF{
-    width: 20px;
-    height: 20px;
-  }
-  .Seccion2Col1 .backup{
-    display: none;
-  }
-  .Columna2{
-    width: 100%;
-    margin-top: 1em;
-  }
-  .Columna3{
-    width: 100%;
-    margin-top: 0;
-  }
-  .ImgMPF{
-    margin-right: 4px;
-    width: 24px;
-    height: 17px;
-  }
-}
-@media screen and (min-width:321px), screen and (max-width:375px){
-  body{
-    width:100%;
-  }
-  footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .Columna1{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .Columna1 h4{
-    font-size: 1.1em;
-    width: 100%;
-  }
-  .LogoFooter{
-    width: 85px;
-    height: 85px;
-  }
-  .Seccion2Col1{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .RedesF{
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .ImgRedesF{
-    width: 23px;
-    height: 23px;
-  }
-  .backup{
-    display: none;
-  }
-  .Columna2{
-    width: 100%;
-    margin-top: 1em;
-  }
-  .Columna3{
-    width: 100%;
-    margin-top: 0;
-  }
-  .ImgMPF{
-    margin-right: 4px;
-    width: 26px;
-    height: 20px;
-  }
-}
-@media screen and (min-width:376px), screen and (orientation: landscape){
-  body{
-    width:100%;
-  }
-  footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .Columna1{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .Columna1 h4{
-    font-size: 1.1em;
-    width: 100%;
-  }
-  .LogoFooter{
-    width: 85px;
-    height: 85px;
-  }
-  .Seccion2Col1{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .RedesF{
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .ImgRedesF{
-    width: 23px;
-    height: 23px;
-  }
-  .backup{
-    display: none;
-  }
-  .Columna2{
-    width: 100%;
-    margin-top: 1em;
-  }
-  .Columna3{
-    width: 100%;
-    margin-top: 0;
-  }
-  .ImgMPF{
-    margin-right: 4px;
-    width: 26px;
-    height: 20px;
-  }
-}
 @media screen and (min-width:425px), screen and (orientation: landscape){
   body{
     width:100%;
