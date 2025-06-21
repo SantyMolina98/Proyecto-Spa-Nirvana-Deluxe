@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
+}
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.Conteinerturnos{
+    border-radius: 10%;
+}
