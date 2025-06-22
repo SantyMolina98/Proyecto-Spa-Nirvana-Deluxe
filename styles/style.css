@@ -8,6 +8,8 @@
   --color-terciary: #b59e7d;
   --color-fourth: #959581;
   --color-fifth: #f1eada;
+   --color-sixth: #eec58c;
+   --color-seventh: #aa6d3b;
 }
 body {
   background-color: var(--color-fifth);
@@ -18,22 +20,31 @@ a {
 /* HEADER */
 .Logo {
   width: 4em;
-  margin: -0.8em;
+  height: 3.2em;
+}
+header{
+  margin: 0;
+  padding: 0;
+  
 }
 
-.d-flex,
-.navtext {
-  margin-right: 5em;
-
-}
 .form-control,
 .me-2 {
-  width: 16em;
+  width: 15.1em;
 }
-.navbar,
+.navbar-nav, .me-auto, .mb-2, .mb-lg-0{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+nav,
+.navbar, 
 .navbar-expand-lg,
-.bg-body-tertiary {
-  background-image: linear-gradient(to bottom, #2c3424, #4c583e);
+.bg-body-tertiary,
+.container-fluid {
+  background-color: var(--color-principal);
+  margin: 0;
+  padding: 0;
 }
 .nav-item,
 .navbar-brand,
@@ -43,6 +54,13 @@ a {
 .navtext {
   color: var(--color-fifth);
 }
+.nav-item:hover .navbar-brand:hover,
+.nav-link:hover,
+.active:hover,
+.nav-item:hover,
+.navtext:hover{
+  color: var(--color-sixth);
+}
 .btn,
 .btn-outline-success {
   background-color: var(--color-terciary);
@@ -51,31 +69,31 @@ a {
 }
 .btn:hover,
 .btn-outline-success:hover {
-  background-color: var(--color-principal);
+  background-color: var(--color-seventh);
   color: var(--color-fifth);
 }
 .BtnContacto {
   background-color: var(--color-principal);
   color: var(--color-fifth);
   padding: 0.4em;
- 
- 
 }
 /* LOGO DE LOGIN */
 svg {
   width: 2.3em;
-  margin-right: -1em;
+  margin-right: 1em;
 }
 .TextEmerLogin {
   display: none;
   position: absolute;
   list-style: none;
-  top: 10vh;
-  right: 35vh;
+  top: 9.1vh;
+  right:7vh;
 }
 .TextEmerLogin li {
   width: 5em;
   height: 5vh;
+  
+  font-size: 0.7em;
   text-align: center;
   border: 1px solid var(--color-principal);
   border-radius: 2vh 0.3vh;
