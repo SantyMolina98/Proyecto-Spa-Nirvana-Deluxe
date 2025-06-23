@@ -145,6 +145,12 @@ footer{
 footer a{
   color: var(--color-sixth);
 }
+footer a::after{
+  color: var(--color-sixth);
+}
+footer a:visited{
+  color: var(--color-sixth);
+}
 .Columna1{
   width: 25%;
   display: flex;
