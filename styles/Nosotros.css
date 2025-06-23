@@ -25,7 +25,7 @@ main {
 }
 
 .card-section{
-    display: flex
+    display: flex;
     justify-content: center;
     width: 100%;
     max-width: 500px;
@@ -35,7 +35,7 @@ main {
 .card{  
     display: flex;
     align-items: center;
-    width: 100%
+    width: 100%;
     /* max-width: 500px; */
     padding: 20px;
     background: var(--color-card);
@@ -50,9 +50,9 @@ main {
     height: 180px;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%
+    border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition all .5s;
+    transition: 0.5s;
     margin-right: 20px;
     transform: translateX(-50%);
     flex-shrink: 0;
@@ -60,7 +60,7 @@ main {
 
 
 .card h2{
-    font-size: clamp(18px, 4vw, 30px)
+    font-size: clamp(18px, 4vw, 30px);
     /* font-size: 30px; */
     font-weight: 600;
 }
