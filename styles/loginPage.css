@@ -5,26 +5,52 @@
   --color-fourth:#ebd5b6;
   --color-fifth:#959581;
   --color-sixth:#f1eada;
+  --color-seventh: #eec58c;
   --color-input:rgb(82, 58, 11);
   --color-input2:#745c3d;
   --color-a:#745e16;
 }
-body{
-  min-width: 100vw;
-  min-height: 100vh;
-  background-color: var(--color-sixth);
-}
 header{
-  height: 13vh;
+  margin: 0;
+  padding: 0;
+  
+}
+.navbar-nav, .me-auto, .mb-2, .mb-lg-0{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+nav,
+.navbar, 
+.navbar-expand-lg,
+.bg-body-tertiary,
+.container-fluid {
+  background-color: var(--color-principal);
+  margin: 0;
+  padding: 0;
+}
+.nav-item,
+.navbar-brand,
+.nav-link,
+.active,
+.nav-item,
+.navtext {
+  color: var(--color-sixth);
+}
+.nav-item:hover .navbar-brand:hover,
+.nav-link:hover,
+.active:hover,
+.nav-item:hover,
+.navtext:hover{
+  color: var(--color-seventh);
 }
 .CardIS a{
   color: var(--color-a);
 }
 .TextSecLOGIN a:hover{
-  background-color: var(--color-terciary);
-  color: var(--color-fourth);
-  border-radius: 0.3em;
-  
+  background-color: var(--color-a);
+  color: var(--color-sixth);
+  border-radius: 0.2em;
 }
 .ForgivePassword a:hover{
   background-color:var(--color-fifth);
@@ -39,20 +65,22 @@ main{
   text-align: center; 
 }
 main{
-  background-image: url(../Assets/Img/Fondo-login-5.jpg);
-  /* object-fit: cover; */
+  background-image: url(../Assets/Img/Fondo-login-4.jpg);
   background-position: left;
   background-repeat:no-repeat;
-  background-size: 100vw 100vh ;
+  background-size: 100% 100% ;
 
 }
 .CardIS{
-  
   background-color: var(--color-fourth);
   padding: 1em;
   border-radius: 1em;
   margin: 1em;
-  
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+.TextCard{
+  font-weight: 600;
 }
 #usuario, #contraseña{
   padding: 0.2em;
@@ -75,6 +103,18 @@ main{
 .BTNgoogle{
   width: 100%;
   position: relative;
+}
+footer{
+  color: var(--color-sixth);
+}
+.Columna1 .backup{
+  color: var(--color-seventh);
+}
+.Columna2 .TextFooter a{
+ color: var(--color-seventh);
+}
+.Columna3 .TextFooter a{
+ color: var(--color-seventh);
 }
 @media (min-width:100px) and (max-width:320px){
   main{
@@ -271,7 +311,7 @@ main{
 
 @media screen and (min-width:1440px), screen and (orientation: landscape){
   body{
-    width: 100vw;
+    width: 100%;
   }
   main{
   width: 100%;
