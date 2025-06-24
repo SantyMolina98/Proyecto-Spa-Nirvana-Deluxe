@@ -9,8 +9,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --color-sixth: #eec58c;
 }
-
+/* Header/Footer diseños para que quede igual al resto */
+.nav-item:hover .navbar-brand:hover,
+.nav-link:hover,
+.active:hover,
+.nav-item:hover,
+.navtext:hover{
+  color: var(--color-sixth);
+}
+.TextEmerLogin {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 9.1vh;
+  right:9vh;
+}
 main {
     display: flex;
     flex-wrap: wrap;
