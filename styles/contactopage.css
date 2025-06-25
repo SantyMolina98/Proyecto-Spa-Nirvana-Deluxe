@@ -8,6 +8,21 @@
   --color-fourth:#959581;
   --color-fifth:#f1eada;
 }
+<<<<<<< HEAD
+=======
+/* Header/Footer: modificaciones para que queden los headers y footers iguales */
+.container-fluid .form-control, .container-fluid
+.me-2 {
+  width: 15.1em;
+}
+.TextEmerLogin {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 9.1vh;
+  right:9.6vh;
+}
+>>>>>>> 6241ecbd033a36345d50dc7107b881531ecdd93f
 
 body{
   min-width: 100vw;

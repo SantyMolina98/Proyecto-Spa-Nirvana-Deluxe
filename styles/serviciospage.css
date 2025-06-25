@@ -9,36 +9,42 @@
   --color-fifth:#f1eada;
 }
 
+/* Header/Footer: modificaciones para que todos queden iguales */
+.TextEmerLogin {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 9.1vh;
+  right:9vh;
+}
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 .Cajaflexible{
     display: flex;
-    justify-content:space-around;
-
-   
+    justify-content: space-around;
 }
+
+
 .Flexreseña{
-    justify-content: center;
+  justify-content: center;
     align-items:first baseline;
-    
 }
-
+    
 #Titulotesti{
 font-style:oblique;
 font-family:fantasy
 }
  
-
-    
-
 .bi-star-fill{
     color: yellow;
 }
 
-/* .bg-transparent, .border-success{
-    border-color:antiquewhite
-} */
 .card-title{
 font-style: oblique;
-
 }
 
 .Testimonio{
