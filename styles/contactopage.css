@@ -8,6 +8,8 @@
   --color-fourth:#959581;
   --color-fifth:#f1eada;
 }
+<<<<<<< HEAD
+=======
 /* Header/Footer: modificaciones para que queden los headers y footers iguales */
 .container-fluid .form-control, .container-fluid
 .me-2 {
@@ -20,37 +22,45 @@
   top: 9.1vh;
   right:9.6vh;
 }
+>>>>>>> 6241ecbd033a36345d50dc7107b881531ecdd93f
 
 body{
   min-width: 100vw;
   min-height: 100vh;
 }
+#ContainerMapa{
+  display: flex;
+  justify-content: space-around;
+  border-radius:10%;
+  padding: 2%;
+  
 
+}
 #Containerformulario{
 display: flex;
+flex-direction: column;
 }
 
 #FormContacto{ 
     color:black 
 }
 
-
 #Bordercaja{
   border: #4c583e solid 1px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 3%;
   display: flex;
   flex-direction: column;
-
+  width: 75%;
+  height:auto
 }
+
 .form-label{
   font-weight: 800;
 }
 
 .form-control{
-  width: 100%;
-  /* background-color:#584738; */
-  
+  width: 100%; 
 }
 
 #exampleFormControlInput1{
@@ -62,13 +72,35 @@ display: flex;
   background-color: aqua;
 }
 
-#ContainerMapa{
+#CONTENEDOR2{
+ display: flex;
+}
+
+.UbicacionMapa{
+border-radius: 50%;
+}
+
+.Mapa{
   display: flex;
+  flex-direction: column;
+  border-radius: 50%;
 }
 
 #enviarboton{
+  display: flex;
   width: 50%;
   justify-content: center;
 align-items: center;
-margin: 50px;
+}
+
+#Contacto{
+  font-size:xx-large;
+  font-style: oblique;
+}
+
+.Contactoicon{
+  font-size:x-large;
+  font-style: oblique;
+
+
 }
