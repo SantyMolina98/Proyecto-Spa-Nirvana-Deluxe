@@ -1,100 +1,141 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --color-principal:#584738;
-  --color-secondary:#4c583e;
-  --color-terciary:#B59E7D;
-  --color-fourth:#959581;
-  --color-fifth:#f1eada;
-}
-body{
-  background-color: var(--color-fifth);
-}
-a{
-  text-decoration: none;
-}
-/* HEADER */
-.Logo{
-  width: 4em;
-  margin:-0.8em;
-}
-.d-flex, .navtext{
-  margin-right: 2em;
-}
-.form-control, .me-2{
-  width: 16em;
-}
-.navbar, .navbar-expand-lg, .bg-body-tertiary{
-  background-image: linear-gradient(to bottom,#2c3424,#4c583e); 
-}
-.nav-item, .navbar-brand, .nav-link, .active, .nav-item, .navtext{
-  color: var(--color-fifth);
-}
-.btn, .btn-outline-success{
-  background-color: var(--color-terciary);
-  color:var(--color-fifth);
-  border: none;
-}
-.btn:hover, .btn-outline-success:hover{
-  background-color: var(--color-principal);
-  color: var(--color-fifth);
-}
-.BtnContacto{
-  background-color: var(--color-principal);
-  color: var(--color-fifth);
-  padding: 0.4em;
- 
- 
-}
-/* LOGO DE LOGIN */
-svg{
-  width: 2.3em;
-  margin-right: -1em;
-}
-.TextEmerLogin{
-  display: none;
-  position: absolute;
-  list-style: none;
-  top: 10vh;
-  right: 35vh;
-}
-.TextEmerLogin li{
-  width: 5em;
-  height: 5vh;
-  text-align: center;
-  border: 1px solid var(--color-principal);
-  border-radius: 2vh 0.3vh ;
-  background-color: var(--color-fifth);
-  color: var(--color-secondary);
-}
-.TextEmerLogin li:hover{
-  background-color: #235699;
-  color: white;
-}
-.nav-item:hover .TextEmerLogin{
-  display: block;
-  
+
+  --color-principal: #584738;
+  --color-secondary: #4c583e;
+  --color-terciary: #b59e7d;
+  --color-fourth: #959581;
+  --color-fifth: #f1eada;
+   --color-sixth: #eec58c;
+   --color-seventh: #aa6d3b;
 }
 
+body {
+  background-color: var(--color-fifth);
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px 60px;
+  border-radius: 10px;
+}
+
+/* NAV */
+.paginaActiva {
+  background-color: var(--color-terciary);
+  color: var(--color-principal);
+}
+
+.paginaActiva:hover{
+  color: var(--color-fifth);
+}
+
+.Logo {
+  width: 4em;
+  margin: 3px 20px;
+}
+
+/* .navbar-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+} */
+
+.cajaflexible{
+  /* background-color: yellowgreen; */
+  display: flex;
+  padding: 28px;
+}
+
+.bg-body-tertiary,
+.container-fluid {
+  background-color: var(--color-principal);
+  padding: 0px;
+}
+
+.navtext {
+  color: var(--color-fifth);
+}
+
+.navtext:hover{
+  background-color: #ffffff4f;
+  color: #342d27;
+  transition: 400ms;
+}
+
+.btn {
+  background-color: var(--color-terciary);
+  color: var(--color-fifth);
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--color-seventh);
+  color: var(--color-fifth);
+}
+
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* LOGO DE LOGIN */
+svg {
+  color: var(--color-fifth);
+  width: 2.3em;
+}
+
+.listyle{
+  list-style: none;
+}
+
+/* .TextEmerLogin {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  right:5vh;
+} */
+
+/* .TextEmerLogin{
+  width: 6em;
+  font-size:small;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--color-sixth);
+
+  color: var(--color-secondary);
+} */
+
 /* MAIN */
-article{
-  margin: 40px;
+
+article {
   border-bottom: 1px solid var(--color-principal);
 }
 
-h2, h4, p{
-  margin: 20px;
+h2,
+h4,
+p {
+  margin: 20px 30px;
   text-align: center;
 }
 
-.img{
+.img {
   width: 20rem;
   border-radius: 3rem;
 }
 
 .contenedor {
   margin: 20px;
+}
+
+.flex {
+  display: flex;
 }
 
 /* FOOTER */
@@ -106,27 +147,361 @@ footer{
   justify-content: space-between;
   width: 100%;
 }
+footer a{
+  color: var(--color-sixth);
+}
+footer a::after{
+  color: var(--color-sixth);
+}
+footer a:visited{
+  color: var(--color-sixth);
+}
 .Columna1{
   width: 25%;
   display: flex;
   flex-wrap: wrap;
 }
+.Columna1 h4{
+  margin: 0;
+  
+}
 .LogoFooter{
-  height: 10em;
+  height: 11em;
   width: 10em;
 }
 .Seccion2Col1{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 0.5em;
   width: 50%;
 }
+.ImgRedesF{
+  width: 30px;
+  height: 30px;
+}
 .backup{
   width: 100%;
+  margin-top: 1.5em;
 }
 .Columna2{
   width: 40%;
+  margin: 0;
+  
+  display: flex;
+  flex-direction: column;
+  
+  text-align: center;
+}
+.ImgMPF{
+  margin-right: 10px;
+  width: 35px;
+  height: 25px;
+}
+.TextFooter{
+  margin-top: 0;
 }
 .Columna3{
   width: 35%;
+}
+
+@media screen and (min-width:425px), screen and (orientation: landscape){
+  body{
+    width:100%;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Columna1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Columna1 h4{
+    font-size: 1.1em;
+    width: 100%;
+  }
+  .LogoFooter{
+    width: 85px;
+    height: 85px;
+  }
+  .Seccion2Col1{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .RedesF{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ImgRedesF{
+    width: 23px;
+    height: 23px;
+  }
+  .backup{
+    display: none;
+  }
+  .Columna2{
+    width: 100%;
+    margin-top: 1em;
+  }
+  .Columna3{
+    width: 100%;
+    margin-top: 0;
+  }
+  .ImgMPF{
+    margin-right: 4px;
+    width: 26px;
+    height: 20px;
+  }
+}@media screen and (min-width:766px), screen and (orientation: landscape){
+  body{
+    width:100%;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-bottom: -9em;
+  }
+  footer .Columna1{
+    width: 50%;
+    height: 9em;
+    
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Columna1 h4{
+    font-size: 1em;
+    width: 100%;
+  }
+  .LogoFooter{
+    width: 110px;
+    height: 110px;
+  }
+  footer .Columna1 .Seccion2Col1{
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .RedesF{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: -3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ImgRedesF{
+    width: 23px;
+    height: 23px;
+  }
+  footer .Columna1 .Seccion2Col1 .backup{
+    display: none;
+  }
+  footer .Columna2{
+    width: 50%;
+    margin-top: 0;
+  }
+  footer .Columna3{
+    width: 60%;
+    margin-top: -6em;
+    height: 25vh;
+  }
+  #PdP{
+    width: 200px;
+    position: relative;
+    left: 27em;
+    bottom: 2.8em;
+  }
+  .ImgMPF{
+    margin-right: 4px;
+    width: 26px;
+    height: 20px;
+  }
+}
+@media screen and (min-width:1022), screen and (orientation: landscape){
+  body{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Columna1 .LogoFooter{
+    width: 130px;
+    height: 130px;
+  }
+  footer .Columna1{
+    width: 28%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .Columna1 .Seccion2Col1{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+    width: 40%;
+  }
+  .backup{
+    display: block;
+  }
+  footer .Columna1 h4{
+    font-size: 1.2em;
+  }
+  footer .Columna1 .Seccion2Col1 .RedesF{
+    margin-top:0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .Columna2{
+    width: 35%;
+    height: 240px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer .Columna3{
+    width: 35%;
+    height:auto ;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #PdP{
+    position: relative;
+    left: 60px;
+    top: 1px;
+  }
+}
+@media screen and (min-width:1438), screen and (orientation: landscape){
+  body{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .LogoFooter{
+    width: 140px;
+    height: 140px;
+  }
+  footer .Columna1{
+    width: 28%;
+    height: auto;
+    display: flex;
+  }
+  .Columna1 .Seccion2Col1{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+    width: 40%;
+  }
+  .backup{
+    display: block;
+  }
+  footer .Columna1 h4{
+    font-size: 1.2em;
+  }
+  footer .Columna1 .Seccion2Col1 .RedesF{
+    margin-top:-2em ;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .Columna2{
+    width: 35%;
+    height: 240px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer .Columna3{
+    width: 35%;
+    height:auto ;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+@media screen and (min-width:2558), screen and (orientation: landscape){
+  body{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Columna1 .LogoFooter{
+    width: 180px;
+    height: 180px;
+  }
+  footer .Columna1{
+    width: 28%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .Columna1 .Seccion2Col1{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1em;
+    width: 40%;
+  }
+  .backup{
+    display: block;
+  }
+  footer .Columna1 h4{
+    font-size: 1.5em;
+  }
+  .ImgRedesF{
+    width: 35px;
+    height: 35px;
+  }
+  .Columna1 .Seccion2Col1 .RedesF{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer .Columna2{
+    width: 35%;
+    height: 240px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer .Columna3{
+    width: 35%;
+    height:auto ;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+ 
 }

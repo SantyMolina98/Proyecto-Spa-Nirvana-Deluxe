@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
+}
+/* Header/Footer: modificaciones para que todos queden iguales */
+.TextEmerLogin {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 9.1vh;
+  right:9vh;
+}
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.Conteinerturnos{
+    border-radius: 10%;
+}

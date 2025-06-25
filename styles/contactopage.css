@@ -27,10 +27,14 @@ padding: 50px;
 #Contacto{
   font:medium;
   font-style: oblique;
+  }
+
+#Containerformulario{
+display: flex;
 }
 
 #FormContacto{ 
-    color:black 
+    color:black; 
 }
 
 #Bordercaja{
@@ -56,9 +60,6 @@ padding: 50px;
  margin:10px;
 }
 
-.exampleFormControlTextarea1{
-  background-color: aqua;
-}
 
 #enviarboton{
   width: 50%;
