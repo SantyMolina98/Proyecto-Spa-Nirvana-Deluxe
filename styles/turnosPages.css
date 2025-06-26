@@ -2,4 +2,48 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
+}
+
+/* body{
+  min-width: 100vw;
+  min-height: 100vh;
+} */
+#Texturno{
+  font-style: oblique;
+  font-size: xx-large;
+}
+.sectioncombos{
+  background-color:#B59E7D
+}
+
+.input-group-text{
+  background-color: beige;
+  width: 15%;
+  border-bottom: solid;
+  border-color:#B59E7D;
+}
+
+#tamaño{
+  width: 15%;
+}
+#servicio{
+  border-bottom: #959581;
+  width: 35%;
+}
+
+.card{
+  width:auto;
+}
+
+.btn-confirm{
+  width: 250px;
+}
+
+.btn-back{
+  width: 250px;
 }
