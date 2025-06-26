@@ -9,28 +9,25 @@
   --color-fifth:#f1eada;
 }
 
+
 body{
   min-width: 100vw;
   min-height: 100vh;
 }
-
 #ContainerMapa{
   display: flex;
-  justify-content: center;
-}
+  justify-content: space-around;
+  border-radius:10%;
+  padding: 2%;
+  
 
-.Mapa{
-border-radius: 1%;
-padding: 50px;
-}
-
-#Contacto{
-  font:medium;
-  font-style: oblique;
+#Containerformulario{
+display: flex;
+flex-direction: column;
 }
 
 #FormContacto{ 
-    color:black 
+    color: black; 
 }
 
 #Bordercaja{
@@ -39,16 +36,16 @@ padding: 50px;
   border-radius: 3%;
   display: flex;
   flex-direction: column;
-
+  width: 75%;
+  height:auto
 }
+
 .form-label{
   font-weight: 800;
 }
 
 .form-control{
   width: 65%;
-
-  
 }
 
 #exampleFormControlInput1{
@@ -56,13 +53,35 @@ padding: 50px;
  margin:10px;
 }
 
-.exampleFormControlTextarea1{
-  background-color: aqua;
+
+#CONTENEDOR2{
+ display: flex;
 }
 
+.UbicacionMapa{
+border-radius: 50%;
+}
+
+.Mapa{
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+
 #enviarboton{
+  display: flex;
   width: 50%;
   justify-content: center;
 align-items: center;
-margin: 50px;
+}
+
+#Contacto{
+  font-size:xx-large;
+  font-style: oblique;
+}
+
+.Contactoicon{
+  font-size:x-large;
+  font-style: oblique;
 }

@@ -1,0 +1,229 @@
+
+/* @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic); */
+*{
+     --color-sixth:#f1eada;
+    --color-input:rgb(82, 58, 11);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-sixth: #eec58c;
+}
+/* Header/Footer diseños para que quede igual al resto */
+.nav-item:hover .navbar-brand:hover,
+.nav-link:hover,
+.active:hover,
+.nav-item:hover,
+.navtext:hover{
+  color: var(--color-sixth);
+}
+.TextEmerLogin {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 9.1vh;
+  right:9vh;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: var(--color-background);
+    color: #fdfdfd;
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+    gap: 50px;
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.card{  
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* max-width: 500px; */
+    padding: 20px;
+    background: var(--color-card);
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card img{
+    max-width: 180px;
+    width: 35vw;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    margin-right: 20px;
+    transform: translateX(-50%);
+    flex-shrink: 0;
+}
+
+
+.card h2{
+    font-size: clamp(18px, 4vw, 30px);
+    /* font-size: 30px; */
+    font-weight: 600;
+}
+
+
+/* .card h3{
+    font-size: 22px;
+    font-weight: 100;
+    opacity: 0.75;
+} */
+
+.card p{
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    opacity: 0.7; 
+    max-width: none; 
+    line-height: 1.5; 
+    color: var(--text-color-light); 
+}
+
+.card button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 45px; 
+    border: 1px solid var(--text-color-light);
+    border-radius: 40px;
+    background: transparent;
+    color: var(--text-color-light);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+
+.card button:hover{
+    background: var(--text-color-light);
+    color: var(--color-card);
+    font-size: 16px; 
+    transform: translateY(-2px);
+}
+
+.card:hover img{
+
+    transform: scale(1.05) translateX(-20%);
+
+    /* transform: scale(1.1); */
+}
+
+
+@media (max-width: 992px) {
+    main {
+        padding: 30px 15px; 
+        gap: 30px;
+    }
+
+    .card {
+        flex-direction: column; 
+        max-width: 400px;
+    }
+
+    .card img {
+        margin: -80px auto 20px auto; 
+        width: 150px; 
+        height: 150px;
+        transform: none; 
+    }
+
+    .card p {
+        max-width: 80%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card button {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+}
+
+/* Para pantallas pequeñas (ej. celulares) */
+@media (max-width: 600px) {
+    main {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 120px;
+        margin: -60px auto 15px auto;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .card button {
+        height: 40px;
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+
+/* MEDIA QUERY *//* 
+@media (max-width: 600px) {
+    .card{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card img{
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .card button{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .card img{
+        height: 15vw;
+        width: 45vw;
+        border-radius: 20%;
+    }
+} */
