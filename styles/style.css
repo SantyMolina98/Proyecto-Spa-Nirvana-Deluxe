@@ -24,68 +24,49 @@ a {
 }
 
 /* NAV */
-.paginaActiva {
-  background-color: var(--color-terciary);
-  color: var(--color-principal);
-}
-
-.paginaActiva:hover{
-  color: var(--color-fifth);
-}
-
-.Logo {
-  width: 4em;
-  margin: 3px 20px;
-}
-
-/* .navbar-nav{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-} */
-
 .cajaflexible{
-  /* background-color: yellowgreen; */
+  background-color: var(--color-fourth);
   display: flex;
-  padding: 28px;
+  align-items: center;
+  padding: 10px 40px;
 }
 
 .bg-body-tertiary,
 .container-fluid {
-  background-color: var(--color-principal);
   padding: 0px;
 }
 
-.navtext {
+.Logo {
+  width: 4em;
+}
+
+.paginaActiva {
+  background-color: var(--color-principal);
+}
+
+.navtext{
   color: var(--color-fifth);
 }
 
 .navtext:hover{
   background-color: #ffffff4f;
   color: #342d27;
+  cursor: pointer;
   transition: 400ms;
 }
 
 .btn {
-  background-color: var(--color-terciary);
+  background-color: var(--color-principal);
   color: var(--color-fifth);
   border: none;
 }
 
 .btn:hover {
-  background-color: var(--color-seventh);
+  background-color: var(--color-terciary) ;
   color: var(--color-fifth);
 }
 
-.navbar .dropdown-toggle::after {
-  display: none !important;
-}
-
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* LOGO DE LOGIN */
+/* LOGO LOGIN */
 svg {
   color: var(--color-fifth);
   width: 2.3em;
@@ -95,22 +76,6 @@ svg {
   list-style: none;
 }
 
-/* .TextEmerLogin {
-  display: none;
-  position: absolute;
-  top: 10vh;
-  right:5vh;
-} */
-
-/* .TextEmerLogin{
-  width: 6em;
-  font-size:small;
-  text-align: center;
-  border-radius: 20px;
-  background-color: var(--color-sixth);
-
-  color: var(--color-secondary);
-} */
 
 /* MAIN */
 
