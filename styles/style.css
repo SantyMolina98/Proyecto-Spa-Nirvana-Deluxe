@@ -141,17 +141,41 @@ p {
 /* FOOTER */
 footer{
   width: 100%;
-  margin-top: 0;
+  height: auto;
+  margin: 0;
   padding: 0;
+  background-color: var(--color-principal);
 }
-.row, .row-cols-1, .row-cols-sm-2, .row-cols-md-5, .py-5, .my-5, .border-top{
+.row, .row-cols-1, .row-cols-sm-2, .row-cols-md-5, .py-5, .border-top{
   width: 100%;
-  margin-top: 0;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
 }
-.card, .mb-3{
+.card{
   width: auto;
+  background-color: var(--color-principal);
+  color: var(--color-fifth);
+  /* border-style: none; */
+}
+.bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+  width: 50px;
+  height: 30px;
+  color: var(--color-sixth);
+}
+.nav, .justify-content-center, .border-bottom, .pb-3, .mb-3{
+  width: auto;
+  height: auto;
+  color: var(--color-fifth);
+}
+.text-center, .text-body-secondary{
+  width: auto;
+  
+}
+.mb-2 .nav-link{
+  color: var(--color-fifth);
+}
+#dr{
+  margin-top: 4em;
+  
 }
 /* footer{
   padding: 1em;
