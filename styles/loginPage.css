@@ -15,35 +15,7 @@ header{
   padding: 0;
   
 }
-.navbar-nav, .me-auto, .mb-2, .mb-lg-0{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-nav,
-.navbar, 
-.navbar-expand-lg,
-.bg-body-tertiary,
-.container-fluid {
-  background-color: var(--color-principal);
-  margin: 0;
-  padding: 0;
-}
-.nav-item,
-.navbar-brand,
-.nav-link,
-.active,
-.nav-item,
-.navtext {
-  color: var(--color-sixth);
-}
-.nav-item:hover .navbar-brand:hover,
-.nav-link:hover,
-.active:hover,
-.nav-item:hover,
-.navtext:hover{
-  color: var(--color-seventh);
-}
+
 .CardIS a{
   color: var(--color-a);
 }
@@ -58,6 +30,7 @@ nav,
   padding: 0.3em;
   border-radius: 1em;
 }
+
 main{
   width: 100%;
   display: flex;
