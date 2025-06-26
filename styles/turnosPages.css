@@ -25,7 +25,7 @@
   background-color: beige;
   width: 15%;
   border-bottom: solid;
-  border-color:#B59E7D
+  border-color:#B59E7D;
 }
 
 #tamaño{
@@ -34,11 +34,6 @@
 #servicio{
   border-bottom: #959581;
   width: 35%;
-}
-
-.Tarjetaeliminar{
-  
-
 }
 
 .card{
