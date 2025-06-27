@@ -12,22 +12,6 @@
     box-sizing: border-box;
     --color-sixth: #eec58c;
 }
-/* Header/Footer diseños para que quede igual al resto */
-.nav-item:hover .navbar-brand:hover,
-.nav-link:hover,
-.active:hover,
-.nav-item:hover,
-.navtext:hover{
-  color: var(--color-sixth);
-}
-
-.TextEmerLogin {
-  display: none;
-  position: absolute;
-  list-style: none;
-  top: 9.1vh;
-  right:9vh;
-}
 main {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +25,7 @@ main {
     gap: 50px;
 }
 
-.card-section{
+main .card-section{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -49,7 +33,7 @@ main {
     
 }
 
-.card{  
+main .card-section .card{  
     display: flex;
     align-items: center;
     width: 100%;
@@ -61,7 +45,7 @@ main {
     position: relative;
 }
 
-.card img{
+main .card-section .card img{
     max-width: 180px;
     width: 35vw;
     height: 180px;
@@ -90,7 +74,7 @@ main {
     opacity: 0.75;
 } */
 
-.card p{
+main .card p{
     font-size: clamp(12px, 2vw, 14px);
     font-weight: 200;
     margin-top: 10px;
@@ -102,13 +86,13 @@ main {
 }
 
 
-ul li {
+.cajaflexible ul li {
   list-style: none;
   display: inline-block;
   margin: .5em .2em;
 }
 
-ul li a {
+.cajaflexible ul li a {
   text-decoration: none;
   color: black;
   background: blueviolet;
@@ -119,7 +103,7 @@ ul li a {
   transition: all .3s ease-in-out;
 }
 
-ul li a:hover {
+.cajaflexible ul li a:hover {
   transform: scale(1.2);
 }
 
@@ -152,7 +136,7 @@ ul li a:hover {
     transform: translateY(-2px);
 } */
 
-.card:hover img{
+main .card-section .card:hover img{
 
     transform: scale(1.05) translateX(-20%);
 
@@ -166,25 +150,25 @@ ul li a:hover {
         gap: 30px;
     }
 
-    .card {
+    main .card-section .card {
         flex-direction: column; 
         max-width: 400px;
     }
 
-    .card img {
+    main .card-section .card img {
         margin: -80px auto 20px auto; 
         width: 150px; 
         height: 150px;
         transform: none; 
     }
 
-    .card p {
+    main .card-section .card p {
         max-width: 80%; 
         margin-left: auto;
         margin-right: auto;
     }
 
-    .card button {
+    main .card-section .card button {
         width: 80%; 
         margin: 0 auto; 
     }
@@ -197,30 +181,30 @@ ul li a:hover {
         gap: 20px;
     }
 
-    .card {
+    main .card-section .card {
         padding: 15px;
     }
 
-    .card img {
+    main .card-section .card img {
         width: 120px;
         height: 120px;
         margin: -60px auto 15px auto;
     }
 
-    .card h2 {
+    main .card-section .card h2 {
         font-size: 20px;
     }
 
-    .card h3 {
+    main .card-section .card h3 {
         font-size: 16px;
     }
 
-    .card p {
+    main .card-section .card p {
         font-size: 12px;
         margin-bottom: 15px;
     }
 
-    .card button {
+    main .card-section .card button {
         height: 40px;
         font-size: 14px;
         width: 90%;

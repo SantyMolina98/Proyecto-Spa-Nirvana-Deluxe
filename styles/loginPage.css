@@ -19,6 +19,13 @@ header{
 .CardIS a{
   color: var(--color-a);
 }
+.CardIS p{
+  width: 100%;
+  text-align: center;
+}
+.TextSecLOGIN a{
+  margin-left: 0;
+}
 .TextSecLOGIN a:hover{
   background-color: var(--color-a);
   color: var(--color-sixth);
@@ -87,6 +94,7 @@ form{
   justify-content: center;
 }
 .BotonL{
+  width: 80%;
   background-color: var(--color-terciary);
   padding: 0.2em;
   border-radius: 0.5em;
@@ -108,20 +116,43 @@ form{
   left: 35px;
 }
 /* FOOTER */
-footer{
+footer .card{
   color: var(--color-sixth);
 }
-.Columna1 .backup{
+.bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
   color: var(--color-seventh);
 }
-.Columna2 .TextFooter a{
- color: var(--color-seventh);
+.columna2, .columna3{
+  width: auto;
 }
-.Columna3 .TextFooter a{
- color: var(--color-seventh);
+.columna2 h5, .columna3 h5{
+  color: var(--color-sixth);
 }
-
-@media screen and (min-width:425px){
+.columna2 .textofootercol ul li a {
+  width: 100%;
+}
+.columna2 .textofootercol ul li a p{
+  width: 100%;
+  text-align: start;
+  margin-bottom: -1em;
+  color: var(--color-seventh);
+}
+.columna3 .textofootercol ul li a {
+  width: 100%;
+}
+.columna3 .textofootercol ul li a p{
+  width: 100%;
+  text-align: start;
+  margin-bottom: -1em;
+  color: var(--color-seventh);
+}
+.bi-paypal, .bi-linkedin{
+  color: var(--color-sixth);
+}
+.DownText{
+  color: var(--color-fifth);
+}
+@media (min-width:320px) and (max-width:425px){
   main{
     width: 100%;
   }
@@ -137,15 +168,120 @@ footer{
   footer{
     width: 100%;
   }
-  .Columna1{
+  .CardIS .SectorBTN .logoG{
+    left: 25px;
+  }
+  footer .columna2{
     width: 100%;
   }
-  .Seccion2Col1{
+  footer .columna2 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna2 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+  footer .columna3{
+    width: 100%;
+  }
+   footer .columna3 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna3 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+} 
+@media (min-width:600px) and (max-width:768px){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .CardIS{
+    width: 70%;
+  }
+  .SectorBTN{
+    width: 100%;
+  }
+  .SectorBTN .BotonL{
+    width: 80%;
+  }
+  .CardIS .SectorBTN .logoG{
+    left: 80px;
+  }
+  footer{
+    width: 100%;
+  }
+  footer .card{
     width: 50%;
   }
-  .Seccion2Col1 .SectorImgFooter{
-    width: 10%;
+  footer .columna2{
+    width: 50%;
+  }
+  footer .columna2 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna2 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+  footer .columna3{
+    width: 100%;
+  }
+   footer .columna3 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna3 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width:800px) and (max-width:1024px){
+  main{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+  }
+  .CardIS{
+    width: 60%;
+  }
+  .SectorBTN{
+    width: 100%;
+  }
+  .SectorBTN .BotonL{
+    width: 100%;
+  }
+  .SectorBTN .BotonL{
+    width: 300px;
+  }
+  .logoG{
+    left: 120px;
+  }
+  footer{
+    width: 100%;
+  }
+  footer .card{
+    width: 50%;
+  }
+  footer .columna2{
+    width: 50%;
+  }
+  footer .columna2 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna2 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+  footer .columna3{
+    width: 100%;
+  }
+   footer .columna3 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna3 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
   }
 }
