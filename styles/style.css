@@ -150,10 +150,26 @@ p {
   transform: scale(1.05);
 }
 
+.visitado{
+  color: var(--color-fifth);
+}
+
 .cajawp{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flecha {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-secondary);
+    font-size: 60px;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: transform 0.3s ease;
 }
 
 #border{
@@ -210,6 +226,21 @@ cursor: pointer;
   transform: scale(1.05);
   transition: 600ms;
 }
+
+.publicidad{
+  position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-sixth);
+    font-size: 60px;
+    border-radius: 15px;
+    bottom: 20px;
+    right: 100px;
+    transition: transform 0.3s ease;
+}
+
+/* RESPONSIVE */
+
 
 /* FOOTER */
 footer{
@@ -270,6 +301,7 @@ footer .card{
   margin-bottom: -3em;
 }
  @media (min-width:375px) and (max-width:425px){
+
   footer .card {
     width: 100%;    
   }

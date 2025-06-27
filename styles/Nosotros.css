@@ -67,6 +67,10 @@ main .card-section .card img{
     color: black;
 }
 
+/* alto de las cards */
+main .card{
+    height: 32em;
+}
 
 /* .card h3{
     font-size: 22px;
@@ -84,30 +88,6 @@ main .card p{
     line-height: 1.5; 
     color: black; 
 }
-
-
-.cajaflexible ul li {
-  list-style: none;
-  display: inline-block;
-  margin: .5em .2em;
-}
-
-.cajaflexible ul li a {
-  text-decoration: none;
-  color: black;
-  background: blueviolet;
-  width: 30px;
-  height: 30px;
-  line-height: 30px !important;
-  border-radius: 50%;
-  transition: all .3s ease-in-out;
-}
-
-.cajaflexible ul li a:hover {
-  transform: scale(1.2);
-}
-
-
 
 /* .card button{
 
