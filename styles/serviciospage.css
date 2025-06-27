@@ -21,6 +21,7 @@
 body{
   min-width: 100vw;
   min-height: 100vh;
+  background-color:#f1eada;
 }
 
 .Cajaflexible{
@@ -28,14 +29,14 @@ body{
     justify-content: space-around;
 }
 
-
 .Flexreseña{
-  justify-content: center;
-    align-items:first baseline;
+    justify-content: center;
+    align-items:first baseline; 
+    color: #f1eada; 
 }
-    
+
 #Titulotesti{
-font-style:oblique;
+font-style:oblique;/*  */
 font-family:fantasy
 }
  
@@ -43,10 +44,20 @@ font-family:fantasy
     color: yellow;
 }
 
-.card-title{
-font-style: oblique;
-}
 
 .Testimonio{
     font-style: oblique;
+}
+
+.card-title{
+font-style: oblique;
+color: black;
+}
+
+.col-md-8{
+  background-color: #584738;
+}
+
+.card-text{
+  color: #f1eada;
 }

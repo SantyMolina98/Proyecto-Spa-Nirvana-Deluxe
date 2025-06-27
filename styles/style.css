@@ -111,15 +111,19 @@ footer{
   padding: 0;
   background-color: var(--color-principal);
 }
+.img-fluid, .rounded-start{
+    width: 300px;
+    height: 250px;
+  }
 .row, .row-cols-1, .row-cols-sm-2, .row-cols-md-5, .py-5, .border-top{
-  width: 100%;
+  width: auto;
   margin: 0;
 }
-.card{
+footer .card{
   width: auto;
   background-color: var(--color-principal);
   color: var(--color-fifth);
-  /* border-style: none; */
+  border-style: none;
 }
 .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
   width: 50px;
@@ -137,143 +141,159 @@ footer{
 }
 .mb-2 .nav-link{
   color: var(--color-fifth);
+  
 }
 #dr{
   margin-top: 4em;
   
 }
-/* footer{
-  padding: 1em;
-  background-color: var(--color-principal);
-  color: var(--color-fifth);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.columna2, .columna3{
+  width: auto;
 }
-footer a{
+.textofootercol ul li p{
+  margin-left:0 ;
+  margin-bottom: -1em;
+  text-align: start;
   color: var(--color-sixth);
 }
-footer a::after{
-  color: var(--color-sixth);
-}
-footer a:visited{
-  color: var(--color-sixth);
-}
-.Columna1{
-  width: 30%;
-  background-color: green;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-.Columna1 h4{
-  margin: 0;
-  
-}
-.LogoFooter{
-  height: 11em;
-  width: 10em;
-}
-.Seccion2Col1{
-  width: 55%;
-  
-  padding-left: 0.5em;
- 
-}
-.Seccion2Col1 .RedesF{
+.DownText{
   width: 100%;
-  background-color: blueviolet;
-  height: auto;
-  
-  
+  color: var(--color-fourth);
+  margin-bottom: -3em;
 }
-.ImgRedesF{
-  width: 35px;
-  height: 35px;
-  margin: 0.3em;
-}
-.backup{
-  width: 100%;
-  margin-top: 1.5em;
-  background-color: red;
-}
-.Columna2{
-  width: 30%;
-  margin: 0;
-  background-color: yellow;
-  display: flex;
-  flex-direction: column;
-  
-}
-.ImgMPF{
- 
-  width: 35px;
-  height: 25px;
-}
-.Columna3{
-  width: 35%;
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width:425px), screen and (max-width:767px){
-  body{
-    width:100%;
+ @media (min-width:375px) and (max-width:425px){
+  footer .card {
+    width: 100%;    
   }
-  footer{
+  footer .card .row{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .LogoFooter{
-    width: 70px;
-    height: 70px;
-  }
-  .Columna1{
-    width: 100%;
-  }
-  .Columna1 h4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  } 
+  .card h5{
     font-size: 1em;
   }
-  .backup{
-    display: none;
+  .col-md-4 .img-fluid, .col-md-4 .rounded-start{
+    width: 120px;
+    height: 120px;
   }
-  .RedesF{
-    display: flex;
-  }
-  .ImgRedesF{
+  .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
     width: 20px;
     height: 20px;
-    margin: 0;
   }
-  .Columna2{
+  .columna2{
     width: 100%;
+    text-align: center;
+    font-size:0.8em ;
   }
-  .Columna3{
+  .columna2 h5{
+    font-size: 1em;
+  }
+  .columna3{
     width: 100%;
+    text-align: center;
+    font-size:0.8em ;
   }
-}@media screen and (min-width:768px), screen and (orientation: landscape){
-  body{
-    width:100%;
+  .columna3 h5{
+    font-size: 1em;
   }
-  
+  .textofootercol ul li p{
+    text-align: center;
+  }
+  .mediopago, .bi-paypal{
+    width: 20px;
+  }
+  .DownText{
+    font-size:0.8em ;
+  }
   
 }
-@media screen and (min-width:1022), screen and (orientation: landscape){
- 
-}
-@media screen and (min-width:1438), screen and (orientation: landscape){
-  body{
+@media (min-width:600px) and (max-width:768px){
+  .row, .row-cols-1, .row-cols-sm-2, .row-cols-md-5, .py-5, .py-3, .border-top{
+    margin-top: 0;
+    display: flex;
+  }
+  footer .card{
+    width: 50%;
+    text-align: center;
+   
+  }
+  .card h5{
+    font-size: 1.1em;
+  }
+  .col-md-4 .img-fluid, .col-md-4 .rounded-start{
+    width: 120px;
+    height: 120px;
+  }
+  .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+    width: 30px;
+    height: 20px;
+  }
+  .columna2{
+    text-align: center;
+    font-size:0.9em ;
+    width: 50%;
+  }
+  .columna2 h5{
+    font-size: 1em;
+  }
+  .columna3{
+    text-align: center;
     width: 100%;
+    font-size:0.9em ;
+    
+  }
+  .columna3 h5{
+    font-size: 1em;
+  }
+  .textofootercol ul li p{
+    text-align: center;
+  }
+  .mediopago, .bi-paypal{
+    width: 20px;
   }
   
- 
 }
-@media screen and (min-width:2558), screen and (orientation: landscape){
-  body{
-    width: 100%;
+
+@media (min-width:800px) and (max-width:1024px){
+  footer .card{
+    width: 50%;
+    text-align: center;
+    
   }
-  
- 
-} */
+  .card h5{
+    font-size: 1.2em;
+  }
+  .col-md-4 .img-fluid, .col-md-4 .rounded-start{
+    width: 130px;
+    height: 130px;
+  }
+  .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+    width: 20px;
+    height: 20px;
+  }
+  .columna2{
+    text-align: center;
+    font-size:0.9em ;
+  }
+  .columna2 h5{
+    font-size: 1.1em;
+  }
+  .columna3{
+    width: 100%;
+    text-align: center;
+    font-size:0.8em ;
+  }
+  .columna3 h5{
+    font-size: 1.1em;
+  }
+  .textofootercol ul li p{
+    text-align: center;
+  }
+  .mediopago, .bi-paypal{
+    width: 20px;
+  }
+  .DownText{
+    font-size: 0.9em;
+  }
+}
