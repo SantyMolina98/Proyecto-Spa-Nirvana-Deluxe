@@ -24,68 +24,49 @@ a {
 }
 
 /* NAV */
-.paginaActiva {
-  background-color: var(--color-terciary);
-  color: var(--color-principal);
-}
-
-.paginaActiva:hover{
-  color: var(--color-fifth);
-}
-
-.Logo {
-  width: 4em;
-  margin: 3px 20px;
-}
-
-/* .navbar-nav{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-} */
-
 .cajaflexible{
-  /* background-color: yellowgreen; */
+  background-color: var(--color-fourth);
   display: flex;
-  padding: 28px;
+  align-items: center;
+  padding: 10px 40px;
 }
 
 .bg-body-tertiary,
 .container-fluid {
-  background-color: var(--color-principal);
   padding: 0px;
 }
 
-.navtext {
+.Logo {
+  width: 4em;
+}
+
+.paginaActiva {
+  background-color: var(--color-principal);
+}
+
+.navtext{
   color: var(--color-fifth);
 }
 
 .navtext:hover{
   background-color: #ffffff4f;
   color: #342d27;
+  cursor: pointer;
   transition: 400ms;
 }
 
 .btn {
-  background-color: var(--color-terciary);
+  background-color: var(--color-principal);
   color: var(--color-fifth);
   border: none;
 }
 
 .btn:hover {
-  background-color: var(--color-seventh);
+  background-color: var(--color-terciary) ;
   color: var(--color-fifth);
 }
 
-.navbar .dropdown-toggle::after {
-  display: none !important;
-}
-
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* LOGO DE LOGIN */
+/* LOGO LOGIN */
 svg {
   color: var(--color-fifth);
   width: 2.3em;
@@ -95,22 +76,6 @@ svg {
   list-style: none;
 }
 
-/* .TextEmerLogin {
-  display: none;
-  position: absolute;
-  top: 10vh;
-  right:5vh;
-} */
-
-/* .TextEmerLogin{
-  width: 6em;
-  font-size:small;
-  text-align: center;
-  border-radius: 20px;
-  background-color: var(--color-sixth);
-
-  color: var(--color-secondary);
-} */
 
 /* MAIN */
 
@@ -140,368 +105,231 @@ p {
 
 /* FOOTER */
 footer{
-  padding: 1em;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-principal);
+}
+.img-fluid, .rounded-start{
+    width: 300px;
+    height: 250px;
+  }
+.row, .row-cols-1, .row-cols-sm-2, .row-cols-md-5, .py-5, .border-top{
+  width: auto;
+  margin: 0;
+}
+.card{
+  width: auto;
   background-color: var(--color-principal);
   color: var(--color-fifth);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  border-style: none;
 }
-footer a{
-  color: var(--color-sixth);
-}
-footer a::after{
-  color: var(--color-sixth);
-}
-footer a:visited{
-  color: var(--color-sixth);
-}
-.Columna1{
-  width: 25%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.Columna1 h4{
-  margin: 0;
-  
-}
-.LogoFooter{
-  height: 11em;
-  width: 10em;
-}
-.Seccion2Col1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 0.5em;
-  width: 50%;
-}
-.ImgRedesF{
-  width: 30px;
+.bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+  width: 50px;
   height: 30px;
+  color: var(--color-sixth);
 }
-.backup{
-  width: 100%;
-  margin-top: 1.5em;
+.nav, .justify-content-center, .border-bottom, .pb-3, .mb-3{
+  width: auto;
+  height: auto;
+  color: var(--color-fifth);
 }
-.Columna2{
-  width: 40%;
-  margin: 0;
+.text-center, .text-body-secondary{
+  width: auto;
   
-  display: flex;
-  flex-direction: column;
+}
+.mb-2 .nav-link{
+  color: var(--color-fifth);
+}
+#dr{
+  margin-top: 4em;
   
-  text-align: center;
 }
-.ImgMPF{
-  margin-right: 10px;
-  width: 35px;
-  height: 25px;
+.columna2, .columna3{
+  width: auto;
 }
-.TextFooter{
-  margin-top: 0;
+.textofootercol ul li p{
+  margin-left:0 ;
+  margin-bottom: -1em;
+  text-align: start;
+  color: var(--color-sixth);
 }
-.Columna3{
-  width: 35%;
+/* @media screen and (max-width:425px){
+  footer .card{
+    width: 100%;
+    text-align: center;
+    
+  }
+  .card h5{
+    font-size: 1em;
+  }
+  .col-md-4 .img-fluid, .col-md-4 .rounded-start{
+    width: 120px;
+    height: 120px;
+  }
+  .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+    width: 20px;
+    height: 20px;
+  }
+  .columna2{
+    text-align: center;
+    font-size:0.8em ;
+  }
+  .columna2 h5{
+    font-size: 1em;
+  }
+  .columna3{
+    text-align: center;
+    font-size:0.8em ;
+  }
+  .columna3 h5{
+    font-size: 1em;
+  }
+  .textofootercol ul li p{
+    text-align: center;
+  }
+  .mediopago, .bi-paypal{
+    width: 20px;
+  }
+  
+}
+@media screen and (min-width:768px){
+  .row, .row-cols-1, .row-cols-sm-2, .row-cols-md-5, .py-5, .py-3, .border-top{
+    margin-top: 0;
+    display: flex;
+  }
+  footer .card{
+    width: 50%;
+    text-align: center;
+    z-index: 1;
+  }
+  .card h5{
+    font-size: 1em;
+  }
+  .col-md-4 .img-fluid, .col-md-4 .rounded-start{
+    width: 120px;
+    height: 120px;
+  }
+  .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+    width: 30px;
+    height: 20px;
+  }
+  .columna2{
+    text-align: center;
+    font-size:0.8em ;
+    width: 50%;
+  }
+  .columna2 h5{
+    font-size: 1em;
+  }
+  .columna3{
+    
+    text-align: center;
+    width: 50%;
+    margin-top: -24em;
+    font-size:0.8em ;
+    z-index: 2;
+  }
+  .columna3 h5{
+    font-size: 1em;
+  }
+  .textofootercol ul li p{
+    text-align: center;
+  }
+  .mediopago, .bi-paypal{
+    width: 20px;
+  }
+  #dr{
+    margin-top: 18em;
+    margin-right:160px;
+  }
+  #sc{
+    margin-right:150px;
+  }
 }
 
-@media screen and (min-width:425px), screen and (orientation: landscape){
-  body{
-    width:100%;
-  }
-  footer{
+@media screen and (min-width:1024px){
+  footer .card{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .Columna1{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .Columna1 h4{
-    font-size: 1.1em;
-    width: 100%;
-  }
-  .LogoFooter{
-    width: 85px;
-    height: 85px;
-  }
-  .Seccion2Col1{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .RedesF{
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .ImgRedesF{
-    width: 23px;
-    height: 23px;
-  }
-  .backup{
-    display: none;
-  }
-  .Columna2{
-    width: 100%;
-    margin-top: 1em;
-  }
-  .Columna3{
-    width: 100%;
-    margin-top: 0;
-  }
-  .ImgMPF{
-    margin-right: 4px;
-    width: 26px;
-    height: 20px;
-  }
-}@media screen and (min-width:766px), screen and (orientation: landscape){
-  body{
-    width:100%;
-  }
-  footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    padding-bottom: -9em;
-  }
-  footer .Columna1{
-    width: 50%;
-    height: 9em;
+    text-align: center;
     
-    display: flex;
-    flex-wrap: wrap;
   }
-  .Columna1 h4{
-    font-size: 1em;
-    width: 100%;
-  }
-  .LogoFooter{
-    width: 110px;
-    height: 110px;
-  }
-  footer .Columna1 .Seccion2Col1{
-    width: 100%;
-    margin-left: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .RedesF{
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: -3em;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .ImgRedesF{
-    width: 23px;
-    height: 23px;
-  }
-  footer .Columna1 .Seccion2Col1 .backup{
-    display: none;
-  }
-  footer .Columna2{
-    width: 50%;
-    margin-top: 0;
-  }
-  footer .Columna3{
-    width: 60%;
-    margin-top: -6em;
-    height: 25vh;
-  }
-  #PdP{
-    width: 200px;
-    position: relative;
-    left: 27em;
-    bottom: 2.8em;
-  }
-  .ImgMPF{
-    margin-right: 4px;
-    width: 26px;
-    height: 20px;
-  }
-}
-@media screen and (min-width:1022), screen and (orientation: landscape){
-  body{
-    width: 100%;
-  }
-  footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .Columna1 .LogoFooter{
-    width: 130px;
-    height: 130px;
-  }
-  footer .Columna1{
-    width: 28%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  footer .Columna1 .Seccion2Col1{
-    height: 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1em;
-    width: 40%;
-  }
-  .backup{
-    display: block;
-  }
-  footer .Columna1 h4{
-    font-size: 1.2em;
-  }
-  footer .Columna1 .Seccion2Col1 .RedesF{
-    margin-top:0 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .Columna2{
-    width: 35%;
-    height: 240px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  footer .Columna3{
-    width: 35%;
-    height:auto ;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  #PdP{
-    position: relative;
-    left: 60px;
-    top: 1px;
-  }
-}
-@media screen and (min-width:1438), screen and (orientation: landscape){
-  body{
-    width: 100%;
-  }
-  footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .LogoFooter{
-    width: 140px;
-    height: 140px;
-  }
-  footer .Columna1{
-    width: 28%;
-    height: auto;
-    display: flex;
-  }
-  .Columna1 .Seccion2Col1{
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1em;
-    width: 40%;
-  }
-  .backup{
-    display: block;
-  }
-  footer .Columna1 h4{
-    font-size: 1.2em;
-  }
-  footer .Columna1 .Seccion2Col1 .RedesF{
-    margin-top:-2em ;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  footer .Columna2{
-    width: 35%;
-    height: 240px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  footer .Columna3{
-    width: 35%;
-    height:auto ;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-  }
- 
-}
-@media screen and (min-width:2558), screen and (orientation: landscape){
-  body{
-    width: 100%;
-  }
-  footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .Columna1 .LogoFooter{
-    width: 180px;
-    height: 180px;
-  }
-  footer .Columna1{
-    width: 28%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-  }
-  .Columna1 .Seccion2Col1{
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 1em;
-    width: 40%;
-  }
-  .backup{
-    display: block;
-  }
-  footer .Columna1 h4{
+  .card h5{
     font-size: 1.5em;
   }
-  .ImgRedesF{
-    width: 35px;
-    height: 35px;
+  .col-md-4 .img-fluid, .col-md-4 .rounded-start{
+    width: 120px;
+    height: 120px;
   }
-  .Columna1 .Seccion2Col1 .RedesF{    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+    width: 20px;
+    height: 20px;
   }
-  footer .Columna2{
-    width: 35%;
-    height: 240px;
-    margin-left: 0;
-    margin-right: 0;
+  .columna2{
+    text-align: center;
+    font-size:0.8em ;
   }
-  footer .Columna3{
-    width: 35%;
-    height:auto ;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
+  .columna2 h5{
+    font-size: 1em;
   }
- 
+  .columna3{
+    text-align: center;
+    font-size:0.8em ;
+  }
+  .columna3 h5{
+    font-size: 1em;
+  }
+  .textofootercol ul li p{
+    text-align: center;
+  }
+  .mediopago, .bi-paypal{
+    width: 20px;
+  }
+  
 }
+@media screen and (min-width:1440px){
+  footer{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-principal);
+}
+.img-fluid, .rounded-start{
+    width: 300px;
+    height: 250px;
+  }
+.row, .row-cols-1, .row-cols-sm-2, .row-cols-md-5, .py-5, .border-top{
+  width: auto;
+  margin: 0;
+}
+.card{
+  width: auto;
+  background-color: var(--color-principal);
+  color: var(--color-fifth);
+  border-style: none;
+  margin: 0;
+}
+.bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+  width: 50px;
+  height: 30px;
+  color: var(--color-sixth);
+}
+.nav, .justify-content-center, .border-bottom, .pb-3, .mb-3{
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: var(--color-fifth);
+}
+.text-center, .text-body-secondary{
+  width: auto;
+  
+}
+.columna2{
+  width: auto;
+}
+.columna3{
+  width: auto;
+}
+} */
