@@ -1,6 +1,96 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
 }
 
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#ContainerMapa{
+display: flex;
+  justify-content: space-around;
+  border-radius:10%;
+  padding: 2%;
+}
+   
+
+#Containerformulario{
+display: flex;
+flex-direction: column;
+}
+
+#FormContacto{ 
+    color: black; 
+}
+
+#Bordercaja{
+  border: #4c583e solid 1px;
+  padding: 5px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+}
+
+.form-label{
+  font-weight: 700;
+}
+
+.form-control{
+  width: 95%;
+}
+
+#exampleFormControlInput1{
+ border: #584738 solid 1.5px;
+ margin: 10px;
+}
+
+.UbicacionMapa{
+border-radius: 50%;
+}
+
+.Mapa{
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+#enviarboton{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+align-items: center;
+}
+
+#Contacto{
+  font-size:xx-large;
+  font-style: oblique;
+}
+
+.Contactoicon{
+  font-size:x-large;
+  font-style: oblique;
+}
+
+.bi-telephone{
+  color: black;
+}
+
+.bi-geo-alt-fill{
+  color: black;
+
+}
+
+#direccion{
+  font-style: oblique;
+  font-size:x-large;
+}

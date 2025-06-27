@@ -1,68 +1,287 @@
 *{
-  --fondo-card:url(../Assets/Img/Paisaje-fondo-card.png);
-  --color-text:black;
-  --color-a:blue;
-  --color-botonL:linear-gradient(to bottom,rgb(115, 214, 153), rgb(195, 230, 210));
-  --color-hoverBL:rgb(0, 119, 255);
-  --color-texthbl:white;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#ebd5b6;
+  --color-fifth:#959581;
+  --color-sixth:#f1eada;
+  --color-seventh: #eec58c;
+  --color-input:rgb(82, 58, 11);
+  --color-input2:#745c3d;
+  --color-a:#745e16;
 }
-body{
-  min-width: 100vw;
-  min-height: 100vh;
+header{
+  margin: 0;
+  padding: 0;
   
 }
-a{
+
+.CardIS a{
   color: var(--color-a);
 }
+.CardIS p{
+  width: 100%;
+  text-align: center;
+}
+.TextSecLOGIN a{
+  margin-left: 0;
+}
+.TextSecLOGIN a:hover{
+  background-color: var(--color-a);
+  color: var(--color-sixth);
+  border-radius: 0.2em;
+}
+.ForgivePassword a:hover{
+  background-color:var(--color-fifth);
+  color: var(--color-sixth);
+  padding: 0.3em;
+  border-radius: 1em;
+}
+
 main{
   width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  text-align: center; 
+}
+main{
+  background-image: url(../Assets/Img/Fondo-login-4.jpg);
+  background-position: left;
+  background-repeat:no-repeat;
+  background-size: 100% 100% ;
+
+}
+form{
+  width: 100%;
 }
 .CardIS{
+  background-color: var(--color-fourth);
   padding: 1em;
-  
-  background-image: var(--fondo-card);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  display: flex;
-  flex-direction: column;
-  color: var(--color-text);
-  text-align: center;
-  align-items: center;
+  border-radius: 1em;
+  margin: 1em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  width: 30%;
 }
-.CardIS h3{
-  font-size: 2em;
+.TextCard{
+  font-weight: 600;
 }
-.FormInicioSesion, form{
+#usuario, #contraseña{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input);
   width: 100%;
-  font-size: 1.1em; 
 }
-.ContainerBTNG{
+#recuerdame:hover{
+  cursor: pointer;
+}
+.ForgivePassword{
+  width: 100%;
+  margin-top: 1em;
+  text-align: center;
+}
+.FormInicioSesion{
+  width: 100%;
+  display: flex;
+  text-align: start;
+}
+.CardIS .SectorBTN{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.BotonL{
+  width: 80%;
+  background-color: var(--color-terciary);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
+}
+.BotonL:hover{
+  background-color: var(--color-principal);
+  color: var(--color-fourth);
+}
+.BTNgoogle{
   width: 100%;
   position: relative;
 }
-.BtnGoogle img{
-  width: 2em;
-  height: 2em;
+.logoG{
   position: absolute;
-  right: 7em;
+  width: 25px;
+  height: 25px;
+  top: 3px;
+  left: 35px;
 }
-.TextCard{
-  background-color: rgba(80, 172, 103, 0.527);
-  padding: 0.1em;
-  border-radius: 0.5em;
-  font-weight: 600;
+/* FOOTER */
+footer .card{
+  color: var(--color-sixth);
 }
-.BotonL{
-  padding: 0.2em;
-  border-radius: 0.7em;
-  background-image: var(--color-botonL);
+.bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
+  color: var(--color-seventh);
 }
-.BotonL:hover{
-  background: var(--color-hoverBL);
-  color: var(--color-texthbl);
+.columna2, .columna3{
+  width: auto;
+}
+.columna2 h5, .columna3 h5{
+  color: var(--color-sixth);
+}
+.columna2 .textofootercol ul li a {
+  width: 100%;
+}
+.columna2 .textofootercol ul li a p{
+  width: 100%;
+  text-align: start;
+  margin-bottom: -1em;
+  color: var(--color-seventh);
+}
+.columna3 .textofootercol ul li a {
+  width: 100%;
+}
+.columna3 .textofootercol ul li a p{
+  width: 100%;
+  text-align: start;
+  margin-bottom: -1em;
+  color: var(--color-seventh);
+}
+.bi-paypal, .bi-linkedin{
+  color: var(--color-sixth);
+}
+.DownText{
+  color: var(--color-fifth);
+}
+@media (min-width:320px) and (max-width:425px){
+  main{
+    width: 100%;
+  }
+  .CardIS{
+    width: 100%;
+  }
+  .SectorBTN{
+    width: 100%;
+  }
+  .SectorBTN .BotonL{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
+  .CardIS .SectorBTN .logoG{
+    left: 25px;
+  }
+  footer .columna2{
+    width: 100%;
+  }
+  footer .columna2 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna2 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+  footer .columna3{
+    width: 100%;
+  }
+   footer .columna3 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna3 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+} 
+@media (min-width:600px) and (max-width:768px){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .CardIS{
+    width: 70%;
+  }
+  .SectorBTN{
+    width: 100%;
+  }
+  .SectorBTN .BotonL{
+    width: 80%;
+  }
+  .CardIS .SectorBTN .logoG{
+    left: 80px;
+  }
+  footer{
+    width: 100%;
+  }
+  footer .card{
+    width: 50%;
+  }
+  footer .columna2{
+    width: 50%;
+  }
+  footer .columna2 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna2 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+  footer .columna3{
+    width: 100%;
+  }
+   footer .columna3 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna3 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width:800px) and (max-width:1024px){
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .CardIS{
+    width: 60%;
+  }
+  .SectorBTN{
+    width: 100%;
+  }
+  .SectorBTN .BotonL{
+    width: 100%;
+  }
+  .SectorBTN .BotonL{
+    width: 300px;
+  }
+  .logoG{
+    left: 120px;
+  }
+  footer{
+    width: 100%;
+  }
+  footer .card{
+    width: 50%;
+  }
+  footer .columna2{
+    width: 50%;
+  }
+  footer .columna2 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna2 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
+  footer .columna3{
+    width: 100%;
+  }
+   footer .columna3 .textofootercol ul li a{
+    width: 100%;
+  }
+  footer .columna3 .textofootercol ul li p{
+    width: 100%;
+    text-align: center;
+  }
 }

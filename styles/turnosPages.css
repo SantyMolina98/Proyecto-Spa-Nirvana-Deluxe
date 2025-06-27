@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
+}
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.sectioncombos{
+  background-color:#B59E7D;
+  margin:2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#Texturno{
+  font-style: oblique;
+  font-size: xx-large;
+}
+
+.input-group-text{
+  background-color: #959581;
+  width: 40em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-select{
+  background-color:#f1eada;
+ padding: 10px;
+ margin: 10px;
+border-bottom: #584738, solid;
+
+}
+
+.input-group{
+display: flex;
+width: 40rem;
+
+}
+
+#tamaño{
+  width: 15%;
+}
+#servicio{
+  border-bottom:#B59E7D;
+  width: 35%;
+}
+
+.Tarjetaeliminar{
+  display: flex;
+  flex-direction: column;
+background-color:#959581; 
+}
+
+.btn-confirm{
+  width: 250px;
+}
+
+.btn-back{
+  width: 250px;
+}
+
+.actions{
+background-color:#B59E7D;
+margin: 10px;
+display: flex;
+flex-direction:row;
+justify-content:space-around;
+align-items: center;
+
+}
+  
+#texsoli{
+  font-style: oblique;
+  font-size: x-large;
+  font-weight: bolder;
+  
+}
