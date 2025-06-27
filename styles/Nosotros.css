@@ -1,8 +1,9 @@
 
 /* @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic); */
 *{
-     --color-sixth:#f1eada;
+    --color-sixth:#f1eada;
     --color-input:rgb(82, 58, 11);
+    
 }
 
 *{
@@ -19,6 +20,7 @@
 .navtext:hover{
   color: var(--color-sixth);
 }
+
 .TextEmerLogin {
   display: none;
   position: absolute;
@@ -78,6 +80,7 @@ main {
     font-size: clamp(18px, 4vw, 30px);
     /* font-size: 30px; */
     font-weight: 600;
+    color: black;
 }
 
 
@@ -95,10 +98,34 @@ main {
     opacity: 0.7; 
     max-width: none; 
     line-height: 1.5; 
-    color: var(--text-color-light); 
+    color: black; 
 }
 
-.card button{
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin: .5em .2em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  background: blueviolet;
+  width: 30px;
+  height: 30px;
+  line-height: 30px !important;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+ul li a:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* .card button{
 
     display: flex;
     justify-content: center;
@@ -116,14 +143,14 @@ main {
     cursor: pointer;
     transition: all .3s ease;
 
-}
+} */
 
-.card button:hover{
+/* .card button:hover{
     background: var(--text-color-light);
     color: var(--color-card);
     font-size: 16px; 
     transform: translateY(-2px);
-}
+} */
 
 .card:hover img{
 
