@@ -48,7 +48,10 @@ font-family:fantasy
 .Testimonio{
     font-style: oblique;
 }
-
+footer .card-title{
+  font-style:normal;
+  color: var(--color-fifth);
+}
 .card-title{
 font-style: oblique;
 color: black;

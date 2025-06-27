@@ -264,6 +264,14 @@ footer .card{
   color: var(--color-fifth);
   border-style: none;
 }
+footer .card .RedesIMG{
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+.RedesIMG .redes{
+  margin:0;
+}
 .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
   width: 50px;
   height: 30px;
