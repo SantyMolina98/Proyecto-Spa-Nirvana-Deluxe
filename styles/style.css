@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 
   --color-principal: #584738;
@@ -28,7 +28,8 @@ a {
   background-color: var(--color-fourth);
   display: flex;
   align-items: center;
-  padding: 10px 40px;
+  width: 100%;
+  padding: 0px 15px;
 }
 
 .bg-body-tertiary,
@@ -37,7 +38,8 @@ a {
 }
 
 .Logo {
-  width: 4em;
+  width: 2.9em;
+  display: block;
 }
 
 .paginaActiva {
@@ -59,11 +61,13 @@ a {
   background-color: var(--color-principal);
   color: var(--color-fifth);
   border: none;
+  transition: transform 0.3s ease;
 }
 
 .btn:hover {
   background-color: var(--color-terciary) ;
   color: var(--color-fifth);
+  transform: scale(1.05);
 }
 
 /* LOGO LOGIN */
@@ -76,18 +80,44 @@ svg {
   list-style: none;
 }
 
-
 /* MAIN */
-
 article {
   border-bottom: 1px solid var(--color-principal);
 }
 
+h1,
 h2,
 h4,
 p {
   margin: 20px 30px;
   text-align: center;
+}
+
+.centrado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 20%;
+}
+
+.logoarticle{
+  width: 10%;
+}
+
+.btnarticle {
+  background-color: var(--color-principal);
+  color: var(--color-fifth);
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btnarticle:hover {
+  background-color: var(--color-terciary) ;
+  color: var(--color-fifth);
+  transform: scale(1.05);
 }
 
 .img {
@@ -96,11 +126,88 @@ p {
 }
 
 .contenedor {
-  margin: 20px;
+  margin: 15px;
 }
 
 .flex {
   display: flex;
+}
+
+.wp { 
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-secondary);
+    font-size: 60px;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.wp:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.cajawp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#border{
+    border-top: 1px solid var(--color-principal);
+    margin: 15px 0px;
+    padding: 15px;
+}
+
+.seccionWrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.secciones{
+width: 31.68em;
+height: 30em;
+object-fit: cover;
+border-radius: 5px;
+border: solid 2px var(--color-fourth);
+filter:brightness(60%);
+cursor: pointer;
+}
+
+.secciones:hover{
+  filter: brightness(100%);
+  transition: 600ms;
+}
+
+.textoabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoabsolute{
+    position: absolute;
+    padding: 10px;
+    color: var(--color-fifth);
+    background-color: #b59e7d5a;
+    border: solid 1px var(--color-fifth);
+}
+
+#etiquetaAsize{
+  font-size: 2rem;
+  /* Para que los botones se vean del mismo tamaño: */
+  display: inline-block;
+  min-width: 225.55px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#etiquetaAsize:hover{
+  transform: scale(1.05);
+  transition: 600ms;
 }
 
 /* FOOTER */
