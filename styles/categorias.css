@@ -24,11 +24,11 @@ a {
 }
 
 /* HEADER */
-header {
+/* header {
     position: sticky;
     top: 0px;
     z-index: 2;
-}
+} */
 
 /* MAIN BANNER*/
 .contenedorImg {

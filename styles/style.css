@@ -62,12 +62,30 @@ header {
   background-color: var(--color-principal);
 }
 
-.navtext {
+.paginaActivaLogin{  
+  color: var(--color-principal);
+}
+
+.navtext{
   color: var(--color-fifth);
   margin-right: 0;
 }
 
-.navtext:hover {
+.login{
+  border: 1px rgba(0, 0, 0, 0) ridge;
+  border-radius: 15em; 
+  padding: 0;
+  margin-left: 2em;
+  width: 60px;
+}
+
+.btnlogin{
+  margin-left: 0.7em;
+}
+.btnloginhover:hover{
+  color: #342d27;
+}
+.navtext:hover, .login:hover{
   background-color: #ffffff4f;
   color: #342d27;
   cursor: pointer;
@@ -76,7 +94,6 @@ header {
 
 li .dropdown-item {
   width: 100%;
-  /* background-color: blue; */
   margin: 0;
   padding-left: 1em;
 }
@@ -369,11 +386,33 @@ footer .card {
   color: var(--color-fourth);
   margin-bottom: -3em;
 }
-@media (min-width: 375px) and (max-width: 425px) {
-  .form-control,
-  .me-2 {
-    width: 90%;
+
+ @media (min-width:375px) and (max-width:425px){
+  header .cajaflexible .Logo{
+    display: none;
   }
+  header .cajaflexible .navbar-toggler{
+    margin-left: -5em;
+  }
+  .nav-item .dropdown-menu  {
+  width: 230px;
+  margin-left: 4em;
+  padding: 0;
+}
+.dropdown-menu .dropdown-item{
+  margin: 0;
+  font-size: 0.8em;
+}
+.dropdown-menu .dropdown-divider{
+  display: none;
+}
+.login .btnlogin{
+  margin-left: 2em;
+}
+  .form-control, .me-2{
+  width: 90%;
+}
+   
   footer .card {
     width: 100%;
   }
