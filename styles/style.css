@@ -348,6 +348,27 @@ footer .card{
   margin-bottom: -3em;
 }
  @media (min-width:375px) and (max-width:425px){
+  header .cajaflexible .Logo{
+    display: none;
+  }
+  header .cajaflexible .navbar-toggler{
+    margin-left: -5em;
+  }
+  .nav-item .dropdown-menu  {
+  width: 230px;
+  margin-left: 4em;
+  padding: 0;
+}
+.dropdown-menu .dropdown-item{
+  margin: 0;
+  font-size: 0.8em;
+}
+.dropdown-menu .dropdown-divider{
+  display: none;
+}
+.login .btnlogin{
+  margin-left: 2em;
+}
   .form-control, .me-2{
   width: 90%;
 }
