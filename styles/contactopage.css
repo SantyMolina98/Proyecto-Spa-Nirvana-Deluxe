@@ -9,6 +9,10 @@
   --color-fifth: #f1eada;
 }
 
+
+#ContainerMapa{
+display: flex;
+}
 body {
   min-width: 100vw;
   min-height: 100vh;
