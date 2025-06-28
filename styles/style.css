@@ -58,13 +58,29 @@ header{
 .paginaActiva {
   background-color: var(--color-principal);
 }
-
+.paginaActivaLogin{
+  
+  color: var(--color-principal);
+}
 .navtext{
   color: var(--color-fifth);
   margin-right:0 ;
 }
+.login{
+  border: 1px rgba(0, 0, 0, 0) ridge;
+  border-radius: 15em; 
+  padding: 0;
+  margin-left: 2em;
+  width: 60px;
+}
 
-.navtext:hover{
+.btnlogin{
+  margin-left: 0.7em;
+}
+.btnloginhover:hover{
+  color: #342d27;
+}
+.navtext:hover, .login:hover{
   background-color: #ffffff4f;
   color: #342d27;
   cursor: pointer;
@@ -73,7 +89,6 @@ header{
 
 li .dropdown-item{
   width: 100%;
-  /* background-color: blue; */
   margin: 0;
   padding-left: 1em;
 }
