@@ -1,21 +1,28 @@
 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   --color-principal:#584738;
   --color-secondary:#4c583e;
   --color-terciary:#B59E7D;
-  --color-fourth:#ebd5b6;
-  --color-fifth:#959581;
-  --color-sixth:#f1eada;
-  --color-seventh: #eec58c;
+  --color-terciary2:#ebd5b6;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
+  --color-sixth: #eec58c;
   --color-input:rgb(82, 58, 11);
   --color-input2:#745c3d;
   --color-a:#745e16;
 }
-header{
-  margin: 0;
-  padding: 0;
-  
-}
+/* HEADER */
 
+.d-flex{
+  display: flex;
+  justify-content: end;
+}
+.form-control, .me-2{
+  width: 50%;
+}
+/* MAIN */
 .CardIS a{
   color: var(--color-a);
 }
@@ -32,13 +39,13 @@ header{
   border-radius: 0.2em;
 }
 .ForgivePassword a:hover{
-  background-color:var(--color-fifth);
+  background-color:var(--color-fourth);
   color: var(--color-sixth);
   padding: 0.3em;
   border-radius: 1em;
 }
-
 main{
+  
   width: 100%;
   display: flex;
   justify-content: end;
@@ -55,7 +62,7 @@ form{
   width: 100%;
 }
 .CardIS{
-  background-color: var(--color-fourth);
+  background-color: var(--color-sixth);
   padding: 1em;
   border-radius: 1em;
   margin: 1em;
@@ -117,16 +124,16 @@ form{
 }
 /* FOOTER */
 footer .card{
-  color: var(--color-sixth);
+  color: var(--color-fifth);
 }
 .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
-  color: var(--color-seventh);
+  color: var(--color-sixth);
 }
 .columna2, .columna3{
   width: auto;
 }
 .columna2 h5, .columna3 h5{
-  color: var(--color-sixth);
+  color: var(--color-fifth);
 }
 .columna2 .textofootercol ul li a {
   width: 100%;
@@ -135,27 +142,22 @@ footer .card{
   width: 100%;
   text-align: start;
   margin-bottom: -1em;
-  color: var(--color-seventh);
+  color: var(--color-sixth);
 }
-.columna3 .textofootercol ul li a {
-  width: 100%;
-}
+
 .columna3 .textofootercol ul li a p{
-  width: 100%;
   text-align: start;
   margin-bottom: -1em;
-  color: var(--color-seventh);
+  color: var(--color-sixth);
 }
 .bi-paypal, .bi-linkedin{
   color: var(--color-sixth);
 }
 .DownText{
-  color: var(--color-fifth);
+  color: var(--color-fourth);
 }
 @media (min-width:320px) and (max-width:425px){
-  main{
-    width: 100%;
-  }
+  
   .CardIS{
     width: 100%;
   }

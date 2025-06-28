@@ -9,11 +9,6 @@
   --color-fifth:#f1eada;
 }
 
-body{
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
 .sectioncombos{
   background-color:#B59E7D;
   margin:2px;
