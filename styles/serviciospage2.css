@@ -9,18 +9,7 @@
   --color-fifth:#f1eada;
 }
 
-/* Header/Footer: modificaciones para que todos queden iguales */
-.TextEmerLogin {
-  display: none;
-  position: absolute;
-  list-style: none;
-  top: 9.1vh;
-  right:9vh;
-}
-
 body{
-  min-width: 100vw;
-  min-height: 100vh;
   background-color:#f1eada;
 }
 
@@ -63,7 +52,9 @@ color: black;
   color: #f1eada;
 }
 
-@media /* (min-width:320px) and  */(max-width:425px) {
+
+@media (max-width:425px) {
+
 .Cajaflexible{
     width: 100%;
     display: flex;
@@ -80,8 +71,9 @@ color: black;
 
 }
 }
-    
-@media (min-width:320px) and (max-width:768px) {
+
+@media (max-width:768px) {
+
 .Cajaflexible{
     width: 100%;
    } 
@@ -122,4 +114,4 @@ color: black;
   height: 800%;
 }
 }
-   
+  

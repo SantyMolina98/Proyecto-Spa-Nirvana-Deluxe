@@ -1,12 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-
-    --color-sixth:#f1eada;
+    
+  --color-principal: #584738;
+  --color-secondary: #4c583e;
+  --color-terciary: #b59e7d;
+  --color-fourth: #959581;
+  --color-fourth2: #95958170;
+  --color-fifth: #f1eada;
+   --color-sixth: #eec58c;
+  
     --color-input:rgb(82, 58, 11);
 }
 
 main{
+    background-color: var(--color-fifth);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,7 +24,7 @@ main{
 }
 
 
-.error_container{
+main .error_container{
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -37,17 +45,17 @@ main{
     gap: 10px;
 }
 
-p:first-of-type{
+.error_code p:first-of-type{
     animation: fall 1s linear;
     transform: rotateZ(-20deg);
 }
 
-P:last-of-type{
+.error_code P:last-of-type{
     animation: fall 1.8s linear;
     transform: rotateZ(8deg);
 }
 
-p:nth-of-type(2){
+.error_code p:nth-of-type(2){
     color: var(--color-input);
     animation: bounce 1.2s 1.8s linear forwards;
     opacity: 0;
