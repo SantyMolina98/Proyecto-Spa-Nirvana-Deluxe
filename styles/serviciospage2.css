@@ -52,7 +52,9 @@ color: black;
   color: #f1eada;
 }
 
+
 @media (max-width:425px) {
+
 .Cajaflexible{
     width: 100%;
     display: flex;
@@ -69,8 +71,9 @@ color: black;
 
 }
 }
-    
+
 @media (max-width:768px) {
+
 .Cajaflexible{
     width: 100%;
    } 
@@ -111,4 +114,4 @@ color: black;
   height: 800%;
 }
 }
-   
+  
