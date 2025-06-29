@@ -408,13 +408,12 @@ footer .card .RedesIMG{
     margin-left: -5em;
   }
   .nav-item .dropdown-menu  {
-  width: 230px;
-  margin-left: 4em;
+  width: 180px;
+  margin-left: 3em;
   padding: 0;
 }
 .dropdown-menu .dropdown-item{
   margin: 0;
-  font-size: 0.8em;
 }
 .dropdown-menu .dropdown-divider{
   display: none;
@@ -422,10 +421,6 @@ footer .card .RedesIMG{
 .login .btnlogin{
   margin-left: 2em;
 }
-  .form-control, .me-2{
-  width: 90%;
-}
-   
   footer .card {
     width: 100%;
   }
@@ -441,6 +436,9 @@ footer .card .RedesIMG{
   .col-md-4 .rounded-start {
     width: 120px;
     height: 120px;
+  }
+  footer .card .RedesIMG{
+    width: 160px;
   }
   .bi-facebook,
   .bi-instagram,
@@ -477,6 +475,12 @@ footer .card .RedesIMG{
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
+  .Logo{
+    display: none;
+  }
+  .navbar-toggler, .btndesplegable{
+    margin-left: -5em;
+  }
   .row,
   .row-cols-1,
   .row-cols-sm-2,
@@ -499,6 +503,7 @@ footer .card .RedesIMG{
     width: 120px;
     height: 120px;
   }
+  
   .bi-facebook,
   .bi-instagram,
   .bi-tiktok,
@@ -510,6 +515,8 @@ footer .card .RedesIMG{
     text-align: center;
     font-size: 0.9em;
     width: 50%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .columna2 h5 {
     font-size: 1em;
@@ -532,6 +539,9 @@ footer .card .RedesIMG{
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
+  .navbar-nav .nav-item .nav-link{
+    margin-right: -1.2em;
+  }
   footer .card {
     width: 50%;
     text-align: center;
