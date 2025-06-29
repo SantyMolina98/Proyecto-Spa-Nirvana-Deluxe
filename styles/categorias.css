@@ -23,13 +23,6 @@ a {
   border-radius: 10px;
 }
 
-/* HEADER */
-/* header {
-    position: sticky;
-    top: 0px;
-    z-index: 2;
-} */
-
 /* MAIN BANNER*/
 .contenedorImg {
     display: flex;
