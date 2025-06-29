@@ -51,8 +51,10 @@ color: black;
 .card-text{
   color: #f1eada;
 }
-
-
+footer .card-title{
+  font-style:normal;
+  color: var(--color-fifth);
+}
 @media (max-width:425px) {
 
 .Cajaflexible{
