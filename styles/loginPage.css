@@ -272,7 +272,8 @@ footer .card{
     width: 50%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna2 .textofootercol ul li p{
     width: 100%;
@@ -282,7 +283,8 @@ footer .card{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
     width: 100%;
