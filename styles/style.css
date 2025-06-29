@@ -55,7 +55,14 @@ header {
 .Logo {
   width: 3em;
   margin-left: 1em;
-  display: block;
+  display: none;
+}
+
+/* Tablet (>= 768px) */
+@media (min-width: 1024px) {
+  .Logo {
+    display: block;
+  }
 }
 
 .paginaActiva {
@@ -94,7 +101,6 @@ header {
 
 .login:hover{
   background-color: #ffffff4f;
-  /* color: #342d27; */
   cursor: pointer;
   transition: 400ms;
 }
@@ -317,7 +323,7 @@ p {
 }
 
 #imgpublicidad{
-  min-width: 100vw;
+  /* min-width: 100vw; */
   height: 30em;
   border: 1px solid #342d27;
   object-fit: cover;
@@ -401,7 +407,7 @@ footer .card .RedesIMG{
 }
 
  @media (min-width:375px) and (max-width:425px){
-  header .cajaflexible .Logo{
+  header .cajaflexible{
     display: none;
   }
   header .cajaflexible .navbar-toggler{
@@ -475,9 +481,6 @@ footer .card .RedesIMG{
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
-  .Logo{
-    display: none;
-  }
   .navbar-toggler, .btndesplegable{
     margin-left: -5em;
   }
