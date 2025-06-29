@@ -1,17 +1,20 @@
 
-/* @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic); */
-*{
-    --color-sixth:#f1eada;
-    --color-input:rgb(82, 58, 11);
-    
+* {
+    --color-sixth: #f1eada;
+    --color-input: rgb(82, 58, 11);
+    --color-background: #f1eada;
+    --color-card: #fff;
+
 }
 
-*{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --color-sixth: #eec58c;
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -25,133 +28,154 @@ main {
     gap: 50px;
 }
 
-main .card-section{
+
+main h1, h3 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(82, 58, 11);
+    margin: 30px;
+}
+
+main h1 {
+    font-size: clamp(30px, 6vw, 50px);
+    margin-bottom: 20px;
+    font-style:oblique;
+}
+
+main .card-section {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 500px;
-    
+
 }
 
-main .card-section .card{  
+main .card-section .card {
     display: flex;
     align-items: center;
     width: 100%;
-    /* max-width: 500px; */
     padding: 20px;
+    padding-top: 0px;
     background: var(--color-card);
     border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     position: relative;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
 }
 
-main .card-section .card img{
+main .card-section .card img {
     max-width: 180px;
-    width: 35vw;
+    width: 180px;
     height: 180px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-    margin-right: 20px;
-    transform: translateX(-50%);
-    flex-shrink: 0;
 }
 
 
-.card h2{
+.card h2 {
     font-size: clamp(18px, 4vw, 30px);
-    /* font-size: 30px; */
     font-weight: 600;
-    color: black;
+    color:  rgb(82, 58, 11);
+    margin-top: 5px;
 }
 
-/* alto de las cards */
-main .card{
+
+main .card {
     height: 32em;
 }
 
-/* .card h3{
-    font-size: 22px;
-    font-weight: 100;
-    opacity: 0.75;
-} */
-
-main .card p{
+main .card p {
     font-size: clamp(12px, 2vw, 14px);
     font-weight: 200;
     margin-top: 10px;
-    margin-bottom: 20px; 
-    opacity: 0.7; 
-    max-width: none; 
-    line-height: 1.5; 
-    color: black; 
+    margin-bottom: 20px;
+    opacity: 0.7;
+    max-width: none;
+    line-height: 1.5;
+    color: black;
 }
 
-/* .card button{
 
+main .card-section .card:hover img {
+
+    transform: scale(1.05) translateX(-20%) scale(1.05);
+}
+
+.card ul { 
+    margin-top: 20px; 
+    display: flex; 
+    flex-direction: row; 
+    padding: 0; 
+    list-style: none;
+}
+
+.card ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    ;
+    
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: white;
+    background:  rgb(82, 58, 11);
+    width: 30px;
+    height: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 45px; 
-    border: 1px solid var(--text-color-light);
-    border-radius: 40px;
-    background: transparent;
-    color: var(--text-color-light);
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all .3s ease;
-
-} */
-
-/* .card button:hover{
-    background: var(--text-color-light);
-    color: var(--color-card);
-    font-size: 16px; 
-    transform: translateY(-2px);
-} */
-
-main .card-section .card:hover img{
-
-    transform: scale(1.05) translateX(-20%);
-
-    /* transform: scale(1.1); */
+    justify-content: center;;
+    line-height: 30px !important;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    font-size: 20px;
 }
 
+ul li a:hover {
+    transform: scale(1.2);
+    color: white;
+    background: rgb(82, 58, 11);
+}
 
 @media (max-width: 992px) {
     main {
-        padding: 30px 15px; 
+        padding: 30px 15px;
         gap: 30px;
     }
 
     main .card-section .card {
-        flex-direction: column; 
-        max-width: 400px;
+
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        padding-top: 90px;
+        align-items: center;
     }
 
     main .card-section .card img {
-        margin: -80px auto 20px auto; 
-        width: 150px; 
+
+        margin: -80px auto 20px auto;
+        width: 150px;
         height: 150px;
-        transform: none; 
+        transform: none;
     }
 
     main .card-section .card p {
-        max-width: 80%; 
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    main .card-section .card button {
-        width: 80%; 
-        margin: 0 auto; 
+    main .card-section .card:hover img {
+        transform: scale(1.05) translateX(-20%);
     }
+
 }
 
 /* Para pantallas pequeñas (ej. celulares) */
@@ -162,7 +186,9 @@ main .card-section .card:hover img{
     }
 
     main .card-section .card {
-        padding: 15px;
+
+        max-width: 400px;
+        padding-top: 110px
     }
 
     main .card-section .card img {
@@ -175,46 +201,42 @@ main .card-section .card:hover img{
         font-size: 20px;
     }
 
-    main .card-section .card h3 {
-        font-size: 16px;
-    }
 
     main .card-section .card p {
         font-size: 12px;
         margin-bottom: 15px;
     }
 
-    main .card-section .card button {
-        height: 40px;
-        font-size: 14px;
-        width: 90%;
-    }
 }
 
-
-/* MEDIA QUERY *//* 
+/* Para pantallas pequeñas (ej. celulares) */
 @media (max-width: 600px) {
-    .card{
-        text-align: center;
-        flex-direction: column;
+    main {
+        padding: 20px 10px;
+        gap: 20px;
     }
 
-    .card img{
-        margin: -100px 0 30px 0;
-        width: 100%;
-        max-width: 1000px;
+    main .card-section .card {
+        padding: 15px;
+        padding-top: 90px;
+
     }
 
-    .card button{
-        width: 100%;
+    main .card-section .card img {
+
+        width: 120px;
+        height: 120px;
+        margin: -60px auto 15px auto;
+
+    }
+
+    main .card-section .card h2 {
+        font-size: 20px;
+    }
+
+
+    main .card-section .card p {
+        font-size: 12px;
+        margin-bottom: 15px;
     }
 }
-
-
-@media (max-width: 400px) {
-    .card img{
-        height: 15vw;
-        width: 45vw;
-        border-radius: 20%;
-    }
-} */

@@ -1,17 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  --color-principal: #584738;
+  --color-secondary: #4c583e;
+  --color-terciary: #b59e7d;
+  --color-fourth: #959581;
+  --color-fifth: #f1eada;
+   --color-sixth: #eec58c;
+   --color-seventh: #aa6d3b;
+}
+
+body {
+  background-color: var(--color-fifth);
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px 60px;
+  border-radius: 10px;
+}
+
 /* HEADER */
-header {
+/* header {
     position: sticky;
     top: 0px;
     z-index: 2;
-}
+} */
 
-/* MAIN */
+/* MAIN BANNER*/
 .contenedorImg {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100vw;
     overflow: hidden;
+    height: 20em;
 }
 
 #imgbanner:hover {
@@ -31,4 +57,33 @@ header {
     padding: 20px;
     color: #fff;
     border-radius: 20px;
+}
+
+/* PAGINACION */
+.btnpagination {
+  background-color: #584738a0;
+  color: var(--color-fifth);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.btnpagination:hover {
+  background-color: #b59e7d83;
+  color: var(--color-fifth);
+  transform: scale(1.05);
+}
+
+.btnactive{
+  background-color: #4c583ea3;
+  color: var(--color-fifth);
+}
+
+.btnactive:hover{
+  background-color: #4c583e51;
+  color: var(--color-fifth); 
+}
+
+.paginacion{
+  margin: 50px;
+  justify-content: center;
 }

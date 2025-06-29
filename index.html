@@ -21,51 +21,48 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-     <ul class="navbar-nav">
-  <li class="nav-item">
-    <a class="nav-link navtext paginaActiva" aria-current="page" href="index.html">Inicio</a>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link navtext" href="Pages/turnosPage.html">Turnos</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link navtext dropdown-toggle" data-bs-toggle="dropdown" href="Pages/Categorias.html" role="button" aria-expanded="false">Categorías</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="Pages/Categorias.html">Tratamientos Faciales</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="Pages/Categorias.html">Tratamientos Corporales</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="Pages/Categorias.html">Masajes</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="Pages/Categorias.html">Masajes con Aromaterapia</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="Pages/Categorias.html">Rituales</a></li>
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link navtext" href="Pages/Contactopage.html">Contáctanos</a>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link navtext" href="Pages/Nosotros.html">Nosotros</a>
-  </li>
-</ul>
-</div>
-<div>
-  <li class="listyle navtext">
-    <a href="./Pages/loginPage.html"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></svg></a>
-  </li>
-</div>
-<div>
-  <form class="d-flex" role="search">
-        <input class="form-control me-2" type="Search" placeholder="Buscar servicio" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-</div>
-</div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link navtext paginaActiva" aria-current="page" href="index.html">Inicio</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link navtext" href="Pages/turnosPage.html">Turnos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navtext dropdown-toggle" data-bs-toggle="dropdown" href="Pages/Categorias.html" role="button" aria-expanded="false">Categorías</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Pages/Categorias.html">Tratamientos Faciales</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Pages/Categorias.html#scrollspyHeading2">Tratamientos Corporales</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Pages/Categorias.html#scrollspyHeading3">Masajes</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Pages/Categorias.html#scrollspyHeading4">Masajes con Aromaterapia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Pages/Categorias.html#scrollspyHeading5">Rituales</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navtext" href="Pages/Contactopage.html">Contáctanos</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link navtext" href="Pages/Nosotros.html">Nosotros</a>
+            </li>
+            <li class="navtext login">
+              <a href="./Pages/loginPage.html" class="btnlogin" ><svg xmlns="http://www.w3.org/2000/svg" class="btnloginhover" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></svg></a>
+            </li>
+          </ul>
+          <div class="busqueda">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="Search" placeholder="Buscar servicio" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
     </nav>
-</header>
+  </header>
   <main>
     <section>
       <div id="carouselExampleCaptions" class="carousel slide">
@@ -119,33 +116,46 @@
       <img src="Assets/Img/prom1.jpg" alt="prom1" class="img">
       <h4>Massage Relax</h4>
       <p><strong>Masajes Full Body + Coffee Pause</strong> <br> Este paquete está diseñado para brindarle una experiencia integral de relajación, bienestar y renovación. </p>
-      <button class="btn">Ver más</button>
+      <a href="Pages/PaginaError.html">
+        <input type="button" class="btn" value="Ver más">
+      </a> 
     </div>
     <div class="col contenedor">
       <img src="Assets/Img/prom2.jpg" alt="prom2" class="img">
       <h4>Spa Revitalizante</h4>
       <p><strong>Blend de masaje a elección</strong><br>Incluye máscara facial, descanso y restauración en sala de relax acompañado de merienda saludable.</p>
-      <button class="btn">Ver más</button>
+      <a href="Pages/PaginaError.html">
+        <input type="button" class="btn" value="Ver más">
+      </a> 
     </div>
     <div class="col contenedor">
       <img src="Assets/Img/prom3.jpg" alt="prom3" class="img">
       <h4>Día de Spa Relax</h4>
       <p><strong>Hidroterapia, Masajes, Facial. Para 2 personas</strong><br>Una tarde diferente para relajarse, descansar y compartir.</p>
-      <button class="btn">Ver más</button>
+      <a href="Pages/PaginaError.html">
+        <input type="button" class="btn" value="Ver más">
+      </a> 
     </div>
     <div class="col contenedor">
       <img src="Assets/Img/prom4.JPG" alt="prom4" class="img">
       <h4>Mini Day Spa</h4>
       <p><strong>Masajes + Limpieza Facial</strong><br>Este paquete incluye un masaje descontracturante y limpieza facial para relajar el cuerpo y renovar la piel.</p>
-      <button class="btn">Ver más</button>
+      <a href="Pages/PaginaError.html">
+        <input type="button" class="btn" value="Ver más">
+      </a> 
     </div>
   </div>
+    </section>
+    <section class="publicidad">
+     <img src="Assets/Img/publicidad.jpg" alt="publicidad" id="imgpublicidad">
     </section>
     <section>
       <article class="centrado" id="border">
         <p>General José María Paz 576, San Miguel de Tucumán - Argentina.</p>
         <p>Horario: todos los días de 07:00 a 21:00 hs. <br>Mail: nirvanaspaybeauty@gmail.com</p>
-        <button class="btnarticle">Whatsapp Spa Concierge</button>
+      <a href="https://web.whatsapp.com/" target="_blank">
+        <input type="button" class="btn" value="Whatsapp Spa Concierge">
+      </a> 
       </article>
       <div class="seccionWrap">
         <div class="textoabs">
@@ -162,9 +172,6 @@
         </div>
       </div>
     </section>
-    <div>
-      <img src="Assets/Img/STF2.JPG" alt="" width="100px" height="100px" class="publicidad">
-    </div>
   </main>
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 py-3 border-top"> 
     <div class="card mb-3" >
@@ -253,9 +260,9 @@
     <div class="DownText">
       <p>© Todos los derechos reservados   |   ® Nirvana Spa & Beauty Company 2025</p>      
     </div>
-              <!-- Icono whatsapp -->
+          <!-- Icono whatsapp -->
           <div class="wp cajawp">
-            <a href="https://web.whatsapp.com/" class="visitado"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://web.whatsapp.com/" class="visitado" target="_blank"><i class="bi bi-whatsapp"></i></a>
           </div>
           <!-- Icono flecha -->
            <div class="flecha cajawp">
