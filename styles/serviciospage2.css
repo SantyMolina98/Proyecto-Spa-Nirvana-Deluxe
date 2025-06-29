@@ -33,13 +33,25 @@ font-family:fantasy
     color: yellow;
 }
 
+.btnservicio{
+  background-color: var(--color-fifth);
+  padding: 15px;
+  color: var(--color-principal);
+  border-radius: 16px;
+}
+
+.btnservicio:hover{
+  background-color: var(--color-fourth);
+  color: var(--color-secondary);
+  transition: 600ms;
+}
 
 .Testimonio{
     font-style: oblique;
     color: black;
 }
 
-.card-title{
+.card-title2{
 font-style: oblique;
 color: black;
 }
@@ -51,16 +63,11 @@ color: black;
 .card-text{
   color: #f1eada;
 }
-footer .card-title{
-  font-style:normal;
-  color: var(--color-fifth);
-}
-@media (max-width:425px) {
 
+@media (max-width:425px) {
 .Cajaflexible{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
    } 
    .card-header{
     width: 100%;
@@ -70,7 +77,6 @@ footer .card-title{
 }
    .card-body{
     width: 100%;
-
 }
 }
 
@@ -117,3 +123,15 @@ footer .card-title{
 }
 }
   
+.reseñasflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+@media (min-width: 1024px) {
+  .reseñasflex {
+    flex-direction: row;
+  }
+}
