@@ -16,7 +16,6 @@
 body {
   background-color: var(--color-fifth);
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -38,6 +37,7 @@ header {
   margin: 0;
   padding: 0;
 }
+
 .cajaflexible {
   background-color: var(--color-fourth);
   display: flex;
