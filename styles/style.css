@@ -80,9 +80,16 @@ header{
 .btnloginhover:hover{
   color: #342d27;
 }
-.navtext:hover, .login:hover{
+.navtext:hover{
   background-color: #ffffff4f;
   color: #342d27;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.login:hover{
+  background-color: #ffffff4f;
+  /* color: #342d27; */
   cursor: pointer;
   transition: 400ms;
 }
