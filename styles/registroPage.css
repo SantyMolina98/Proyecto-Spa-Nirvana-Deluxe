@@ -133,6 +133,21 @@ footer .card{
   main h2{
     font-size: 1.4em;
   }
+  main{
+    margin-left: 0;
+    margin-right: 0;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .CardRegistro{
+    width: 80%;
+  }
+  .ContainerRegistro{
+    width: 100%;
+  }
   .ContainerRegistro h4{
     font-size: 1.2em;
     width: 100%;
@@ -166,26 +181,28 @@ footer .card{
     width: 300px;
     margin: 0;
     background-color: var(--color-input2);
-    color: var(--color-seventh);
+    color: var(--color-btn);
   }
   footer .columna2{
     width: 100%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna2 .textofootercol ul li p{
-    width: 100%;
+    
     text-align: center;
   }
   footer .columna3{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
-    width: 100%;
+    
     text-align: center;
   }
 }
@@ -226,26 +243,28 @@ footer .card{
     width: 300px;
     margin: 0;
     background-color: var(--color-input2);
-    color: var(--color-seventh);
+    color: var(--color-btn);
   }
   footer .columna2{
     width: 50%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna2 .textofootercol ul li p{
-    width: 100%;
+    
     text-align: center;
   }
   footer .columna3{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
-    width: 100%;
+  
     text-align: center;
   }
 }
@@ -286,13 +305,14 @@ footer .card{
     width: 300px;
     margin: 0;
     background-color: var(--color-input2);
-    color: var(--color-seventh);
+    color: var(--color-btn);
   }
   footer .columna2{
     width: 50%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna2 .textofootercol ul li p{
     width: 100%;
@@ -302,7 +322,8 @@ footer .card{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
     width: 100%;

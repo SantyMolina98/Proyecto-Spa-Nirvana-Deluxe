@@ -55,7 +55,14 @@ header {
 .Logo {
   width: 3em;
   margin-left: 1em;
-  display: block;
+  display: none;
+}
+
+/* Tablet (>= 768px) */
+@media (min-width: 1024px) {
+  .Logo {
+    display: block;
+  }
 }
 
 .paginaActiva {
@@ -94,7 +101,6 @@ header {
 
 .login:hover{
   background-color: #ffffff4f;
-  /* color: #342d27; */
   cursor: pointer;
   transition: 400ms;
 }
@@ -317,7 +323,7 @@ p {
 }
 
 #imgpublicidad{
-  min-width: 100vw;
+  /* min-width: 100vw; */
   height: 30em;
   border: 1px solid #342d27;
   object-fit: cover;
@@ -351,10 +357,16 @@ footer .card {
   color: var(--color-fifth);
   border-style: none;
 }
-.bi-facebook,
-.bi-instagram,
-.bi-tiktok,
-.bi-twitter-x {
+
+footer .card .RedesIMG{
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+.RedesIMG .redes{
+  margin:0;
+}
+.bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
   width: 50px;
   height: 30px;
   color: var(--color-sixth);
@@ -395,20 +407,19 @@ footer .card {
 }
 
  @media (min-width:375px) and (max-width:425px){
-  header .cajaflexible .Logo{
+  header .cajaflexible{
     display: none;
   }
   header .cajaflexible .navbar-toggler{
     margin-left: -5em;
   }
   .nav-item .dropdown-menu  {
-  width: 230px;
-  margin-left: 4em;
+  width: 180px;
+  margin-left: 3em;
   padding: 0;
 }
 .dropdown-menu .dropdown-item{
   margin: 0;
-  font-size: 0.8em;
 }
 .dropdown-menu .dropdown-divider{
   display: none;
@@ -416,10 +427,6 @@ footer .card {
 .login .btnlogin{
   margin-left: 2em;
 }
-  .form-control, .me-2{
-  width: 90%;
-}
-   
   footer .card {
     width: 100%;
   }
@@ -435,6 +442,9 @@ footer .card {
   .col-md-4 .rounded-start {
     width: 120px;
     height: 120px;
+  }
+  footer .card .RedesIMG{
+    width: 160px;
   }
   .bi-facebook,
   .bi-instagram,
@@ -471,6 +481,9 @@ footer .card {
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
+  .navbar-toggler, .btndesplegable{
+    margin-left: -5em;
+  }
   .row,
   .row-cols-1,
   .row-cols-sm-2,
@@ -493,6 +506,7 @@ footer .card {
     width: 120px;
     height: 120px;
   }
+  
   .bi-facebook,
   .bi-instagram,
   .bi-tiktok,
@@ -504,6 +518,8 @@ footer .card {
     text-align: center;
     font-size: 0.9em;
     width: 50%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .columna2 h5 {
     font-size: 1em;
@@ -526,6 +542,9 @@ footer .card {
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
+  .navbar-nav .nav-item .nav-link{
+    margin-right: -1.2em;
+  }
   footer .card {
     width: 50%;
     text-align: center;

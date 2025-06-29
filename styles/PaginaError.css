@@ -83,6 +83,12 @@ main .error_container{
     opacity: 0.8;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (min-width: 48rem) {
     .error_description{
         padding: 0;

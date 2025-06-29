@@ -1,18 +1,17 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  --color-principal:#584738;
-  --color-secondary:#4c583e;
-  --color-terciary:#B59E7D;
-  --color-terciary2:#ebd5b6;
-  --color-fourth:#959581;
-  --color-fifth:#f1eada;
-  --color-sixth: #eec58c;
-  --color-input:rgb(82, 58, 11);
-  --color-input2:#745c3d;
-  --color-a:#745e16;
+
+  --color-principal: #584738;
+  --color-secondary: #4c583e;
+  --color-terciary: #b59e7d;
+  --color-fourth: #959581;
+  --color-fifth: #f1eada;
+   --color-sixth: #eec58c;
+   --color-seventh: #aa6d3b;
 }
+
 /* HEADER */
 
 .d-flex{
@@ -23,24 +22,24 @@
   width: 50%;
 }
 /* MAIN */
-.CardIS a{
-  color: var(--color-a);
+main .CardIS a{
+  color: var(--color-seventh);
 }
-.CardIS p{
+main .CardIS p{
   width: 100%;
   text-align: center;
 }
-.TextSecLOGIN a{
+main .CardIS .TextSecLOGIN a{
   margin-left: 0;
 }
 .TextSecLOGIN a:hover{
-  background-color: var(--color-a);
+  background-color: var(--color-seventh);
   color: var(--color-sixth);
   border-radius: 0.2em;
 }
-.ForgivePassword a:hover{
-  background-color:var(--color-fourth);
-  color: var(--color-sixth);
+.FormInicioSesion .ForgivePassword a:hover{
+  background-color: var(--color-fourth);
+  color: var(--color-fifth);
   padding: 0.3em;
   border-radius: 1em;
 }
@@ -56,7 +55,6 @@ main{
   background-position: left;
   background-repeat:no-repeat;
   background-size: 100% 100% ;
-
 }
 form{
   width: 100%;
@@ -71,18 +69,22 @@ form{
   width: 30%;
 }
 .TextCard{
+  margin: 10px 0px;
   font-weight: 600;
+}
+.TextSecLOGIN{
+  margin-top:15px;
 }
 #usuario, #contraseña{
   padding: 0.2em;
   border-radius: 0.5em;
-  border: 0.15em solid var(--color-input);
+  border: 1px solid black;
   width: 100%;
 }
 #recuerdame:hover{
   cursor: pointer;
 }
-.ForgivePassword{
+.FormInicioSesion .ForgivePassword{
   width: 100%;
   margin-top: 1em;
   text-align: center;
@@ -92,20 +94,23 @@ form{
   display: flex;
   text-align: start;
 }
-.CardIS .SectorBTN{
+.SectorBTN{
   width: 100%;
-  height: auto;
+  margin-top: 15px;
+  /* background-color: blue; */
+  height: 6em;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .BotonL{
   width: 80%;
-  background-color: var(--color-terciary);
+  background-color: var(--color-secondary);
+  color: var(--color-fifth);
   padding: 0.2em;
   border-radius: 0.5em;
-  border:0.1em solid var(--color-principal);
+  border: 1px solid #4c583e;
 }
 .BotonL:hover{
   background-color: var(--color-principal);
@@ -120,7 +125,7 @@ form{
   width: 25px;
   height: 25px;
   top: 3px;
-  left: 35px;
+  left: 60px;
 }
 /* FOOTER */
 footer .card{
@@ -151,33 +156,33 @@ footer .card{
   color: var(--color-sixth);
 }
 .bi-paypal, .bi-linkedin{
-  color: var(--color-sixth);
+  color: var(--color-fifth);
 }
 .DownText{
   color: var(--color-fourth);
 }
 @media (min-width:320px) and (max-width:425px){
   
-  .CardIS{
+  main .CardIS{
     width: 100%;
   }
-  .SectorBTN{
+  main .CardIS .SectorBTN{
     width: 100%;
   }
-  .SectorBTN .BotonL{
+  main .CardIS .SectorBTN .BotonL{
     width: 100%;
   }
   footer{
     width: 100%;
   }
   .CardIS .SectorBTN .logoG{
-    left: 25px;
+    left: 45px;
   }
   footer .columna2{
     width: 100%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
   }
   footer .columna2 .textofootercol ul li p{
     width: 100%;
@@ -187,7 +192,8 @@ footer .card{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
     width: 100%;
@@ -200,17 +206,17 @@ footer .card{
     display: flex;
     justify-content: center;
   }
-  .CardIS{
+  main .CardIS{
     width: 70%;
   }
-  .SectorBTN{
+  main .CardIS .SectorBTN{
     width: 100%;
   }
-  .SectorBTN .BotonL{
+  main .CardIS .SectorBTN .BotonL{
     width: 80%;
   }
-  .CardIS .SectorBTN .logoG{
-    left: 80px;
+  main .CardIS .SectorBTN .logoG{
+    left: 120px;
   }
   footer{
     width: 100%;
@@ -222,7 +228,8 @@ footer .card{
     width: 50%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna2 .textofootercol ul li p{
     width: 100%;
@@ -232,7 +239,8 @@ footer .card{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
     width: 100%;
@@ -258,7 +266,7 @@ footer .card{
     width: 300px;
   }
   .logoG{
-    left: 120px;
+    left: 180px;
   }
   footer{
     width: 100%;
@@ -270,7 +278,8 @@ footer .card{
     width: 50%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna2 .textofootercol ul li p{
     width: 100%;
@@ -280,7 +289,8 @@ footer .card{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
     width: 100%;
