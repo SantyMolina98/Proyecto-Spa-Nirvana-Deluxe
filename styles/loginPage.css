@@ -1,18 +1,17 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  --color-principal:#584738;
-  --color-secondary:#4c583e;
-  --color-terciary:#B59E7D;
-  --color-terciary2:#ebd5b6;
-  --color-fourth:#959581;
-  --color-fifth:#f1eada;
-  --color-sixth: #eec58c;
-  --color-input:rgb(82, 58, 11);
-  --color-input2:#745c3d;
-  --color-a:#745e16;
+
+  --color-principal: #584738;
+  --color-secondary: #4c583e;
+  --color-terciary: #b59e7d;
+  --color-fourth: #959581;
+  --color-fifth: #f1eada;
+   --color-sixth: #eec58c;
+   --color-seventh: #aa6d3b;
 }
+
 /* HEADER */
 
 .d-flex{
@@ -24,7 +23,7 @@
 }
 /* MAIN */
 .CardIS a{
-  color: var(--color-a);
+  color: var(--color-terciary);
 }
 .CardIS p{
   width: 100%;
@@ -35,12 +34,11 @@
 }
 .TextSecLOGIN a:hover{
   background-color: var(--color-a);
-  color: var(--color-sixth);
+  color: var(--color-fourth);
   border-radius: 0.2em;
 }
 .ForgivePassword a:hover{
-  background-color:var(--color-fourth);
-  color: var(--color-sixth);
+  color: var(--color-fourth);
   padding: 0.3em;
   border-radius: 1em;
 }
@@ -56,13 +54,12 @@ main{
   background-position: left;
   background-repeat:no-repeat;
   background-size: 100% 100% ;
-
 }
 form{
   width: 100%;
 }
 .CardIS{
-  background-color: var(--color-sixth);
+  background-color: var(--color-fifth);
   padding: 1em;
   border-radius: 1em;
   margin: 1em;
@@ -102,10 +99,11 @@ form{
 }
 .BotonL{
   width: 80%;
-  background-color: var(--color-terciary);
+  background-color: var(--color-secondary);
+  color: var(--color-fifth);
   padding: 0.2em;
   border-radius: 0.5em;
-  border:0.1em solid var(--color-principal);
+  border: 1px solid #4c583e;
 }
 .BotonL:hover{
   background-color: var(--color-principal);
@@ -120,7 +118,7 @@ form{
   width: 25px;
   height: 25px;
   top: 3px;
-  left: 35px;
+  left: 53px;
 }
 /* FOOTER */
 footer .card{
