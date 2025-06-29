@@ -323,8 +323,9 @@ p {
 }
 
 #imgpublicidad{
-  /* min-width: 100vw; */
-  height: 30em;
+  max-width: 100%;
+  height: auto;
+  display: block;
   border: 1px solid #342d27;
   object-fit: cover;
 }
