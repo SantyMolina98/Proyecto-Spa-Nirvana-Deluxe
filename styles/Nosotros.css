@@ -4,7 +4,7 @@
     --color-input: rgb(82, 58, 11);
     --color-background: #f1eada;
     --color-card: #fff;
-
+    --color-sixth: #eec58c;
 }
 
 *,
@@ -78,7 +78,7 @@ main .card-section .card img {
 }
 
 
-.card h2 {
+main .card h2 {
     font-size: clamp(18px, 4vw, 30px);
     font-weight: 600;
     color:  rgb(82, 58, 11);
@@ -107,7 +107,7 @@ main .card-section .card:hover img {
     transform: scale(1.05) translateX(-20%) scale(1.05);
 }
 
-.card ul { 
+main .card ul { 
     margin-top: 20px; 
     display: flex; 
     flex-direction: row; 
@@ -115,7 +115,7 @@ main .card-section .card:hover img {
     list-style: none;
 }
 
-.card ul li {
+main .card ul li {
     list-style: none;
     display: inline-block;
     margin: 0;
@@ -123,7 +123,7 @@ main .card-section .card:hover img {
     
 }
 
-.card ul li a {
+main .card ul li a {
     text-decoration: none;
     color: white;
     background:  rgb(82, 58, 11);
@@ -137,11 +137,12 @@ main .card-section .card:hover img {
     font-size: 20px;
 }
 
-ul li a:hover {
+main .card ul li a:hover {
     transform: scale(1.2);
     color: white;
     background: rgb(82, 58, 11);
 }
+
 
 @media (max-width: 992px) {
     main {

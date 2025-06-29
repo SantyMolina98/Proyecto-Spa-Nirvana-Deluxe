@@ -23,7 +23,7 @@
 }
 /* MAIN */
 .CardIS a{
-  color: var(--color-terciary);
+  color: var(--color-seventh);
 }
 .CardIS p{
   width: 100%;
@@ -33,12 +33,13 @@
   margin-left: 0;
 }
 .TextSecLOGIN a:hover{
-  background-color: var(--color-a);
-  color: var(--color-fourth);
+  background-color: var(--color-seventh);
+  color: var(--color-sixth);
   border-radius: 0.2em;
 }
 .ForgivePassword a:hover{
-  color: var(--color-fourth);
+  background-color: var(--color-fourth);
+  color: var(--color-fifth);
   padding: 0.3em;
   border-radius: 1em;
 }
@@ -59,7 +60,7 @@ form{
   width: 100%;
 }
 .CardIS{
-  background-color: var(--color-fifth);
+  background-color: var(--color-sixth);
   padding: 1em;
   border-radius: 1em;
   margin: 1em;
@@ -118,7 +119,7 @@ form{
   width: 25px;
   height: 25px;
   top: 3px;
-  left: 53px;
+  left: 30px;
 }
 /* FOOTER */
 footer .card{
@@ -175,7 +176,7 @@ footer .card{
     width: 100%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
   }
   footer .columna2 .textofootercol ul li p{
     width: 100%;
@@ -185,7 +186,8 @@ footer .card{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
     width: 100%;
@@ -220,7 +222,8 @@ footer .card{
     width: 50%;
   }
   footer .columna2 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna2 .textofootercol ul li p{
     width: 100%;
@@ -230,7 +233,8 @@ footer .card{
     width: 100%;
   }
    footer .columna3 .textofootercol ul li a{
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer .columna3 .textofootercol ul li p{
     width: 100%;
