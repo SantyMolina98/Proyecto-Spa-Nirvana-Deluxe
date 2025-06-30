@@ -38,11 +38,8 @@ font-family:fantasy
     font-style: oblique;
     color: black;
 }
-footer .card-title{
-  font-style:normal;
-  color: var(--color-fifth);
-}
-.card-title{
+
+.card-title2{
 font-style: oblique;
 color: black;
 }
