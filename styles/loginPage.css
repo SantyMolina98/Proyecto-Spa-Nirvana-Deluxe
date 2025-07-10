@@ -4,6 +4,7 @@
   box-sizing: border-box;
 
   --color-principal: #584738;
+  --color-principal2: #3f3228;
   --color-secondary: #4c583e;
   --color-terciary: #b59e7d;
   --color-fourth: #959581;
@@ -94,38 +95,48 @@ form{
   display: flex;
   text-align: start;
 }
+/* Botones de Ingresar y Continuar con Google */
 .SectorBTN{
   width: 100%;
   margin-top: 15px;
-  /* background-color: blue; */
+  margin-bottom: 15px;
   height: 6em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
+.SectorBTN a{
+  color: var(--color-fifth);
+}
+.SectorBTN a:visited{
+  color: var(--color-fifth);
+}
+
 .BotonL{
   width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: var(--color-secondary);
   color: var(--color-fifth);
   padding: 0.2em;
   border-radius: 0.5em;
   border: 1px solid #4c583e;
 }
-.BotonL:hover{
-  background-color: var(--color-principal);
-  color: var(--color-fourth);
-}
-.BTNgoogle{
+.SectorBTN a{
   width: 100%;
-  position: relative;
 }
-.logoG{
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 3px;
-  left: 60px;
+.BotonL a{
+  width: 100%;
+  margin: 0;  
+}
+.BotonL:hover, .BotonL a:hover, .SectorBTN a:hover{
+  background-color: var(--color-principal);
+  color: var(--color-sixth);
 }
 /* FOOTER */
 footer .card{
@@ -134,6 +145,7 @@ footer .card{
 .bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter-x{
   color: var(--color-sixth);
 }
+
 .columna2, .columna3{
   width: auto;
 }
@@ -144,7 +156,7 @@ footer .card{
   width: 100%;
 }
 .columna2 .textofootercol ul li a p{
-  width: 100%;
+  width: 65%;
   text-align: start;
   margin-bottom: -1em;
   color: var(--color-sixth);
