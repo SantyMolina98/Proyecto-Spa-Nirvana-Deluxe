@@ -10,15 +10,14 @@
 }
 
 .sectioncombos {
-  background-color: var(--color-terciary);
   margin: 2px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  justify-items: center;
   align-items: center;
-  padding:20px;
+  border: 3px solid var(--color-principal);
+  overflow-x: hidden;
 }
 
 #Texturno {
@@ -28,32 +27,38 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.form-container {
-background-color: var(--color-fourth); 
-    padding: 20px;
-    border-radius: 8px; 
-    width: 90%; 
-    max-width: 600px; 
-    margin: 20px auto; 
-}
-    
-.input-group-text {
-  background-color: #959581;
-  width: 100%;
+
+#formuselec {
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group-text {
+  background-color: var(--color-fourth);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
   color: var(--color-principal);
-  font-weight:bold;
-  padding: 10px o;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .form-select {
-  background-color: var(--color-fifth);
+  background-color: var(--color-terciary);
   padding: 10px;
-  margin: 10px;
-  border:1px solid var(--color-principal);
+  border: 1px solid var(--color-principal);
   border-radius: 4px;
+}
+
+.form-select:hover{
+  cursor: pointer;
+  background-color: #877b6a88;
 }
 
 .input-group {
@@ -61,20 +66,11 @@ background-color: var(--color-fourth);
   width: 40em;
 }
 
-.input-group2 {
-  display: flex;
-  flex-direction: column;
- justify-items: center;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
 #tamaño {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  color:var(--color-principal);
+  color: var(--color-principal);
   margin-bottom: 10px;
 }
 
@@ -83,19 +79,33 @@ background-color: var(--color-fourth);
   width: 35%;
   text-align: center;
   font-weight: bold;
-  color: var( --color-principal);
+  color: var(--color-principal);
   padding-bottom: 5px;
 }
 
-    
+.flexcards{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px;
+}
+
+@media (max-width: 425px){
+  .flexcards {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 
 .Tarjetaeliminar {
   display: flex;
   flex-direction: column;
   background-color: #959581;
+  width: 100%;
 }
 
-.btn-confirm, .btn-back {
+.btn-confirm,
+.btn-back {
   width: 100%;
   max-width: 250px;
   padding: 12px 20px;
@@ -123,7 +133,7 @@ background-color: var(--color-fourth);
 
 #texsoli {
   font-style: oblique;
-  font-size:1.5em;
+  font-size: 1.5em;
   font-weight: bolder;
   text-align: center;
   margin-top: 20px;
@@ -131,35 +141,27 @@ background-color: var(--color-fourth);
 }
 
 @media (max-width:425px) {
- main {
+  Main {
     display: flex;
     width: 100%;
   }
-  .input-group2{
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+
+  #Texturno {
+    font-size: 1.8em;
   }
-#Texturno {
-        font-size: 1.8em;
-    }
 
   #form-selec {
     width: 95%;
     padding: 15px;
   }
 
-  .input-group {
+  .input-group-text {
+    padding: 8px;
     width: 100%;
   }
 
-  .input-group-text {
-    padding: 8px 0;
-  }
-
   .form-select {
-    width: 80%;
-    flex-wrap: wrap;
+    width: 100%;
   }
 
   .actions {
@@ -169,23 +171,41 @@ background-color: var(--color-fourth);
     flex-direction: column;
     align-items: center;
   }
-#tamaño{
-  width: 20%;
-  align-content: center;
-  
-}
+
+  #tamaño {
+    width: 100%;
+    margin-bottom: auto;
+  }
+
   .btn-confirm,
-    .btn-back {
-        width: 95%; 
-        padding: 10px 15px;
-        font-size: 0.9em;
-    }
-.Tarjetaeliminar{
-height:100%;
-}
-    .card-body {
-      flex-direction: column;
+  .btn-back {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    flex-direction: row;
+  }
+
+  .Tarjetaeliminar {
+    width: 100%;
+  }
+
+  .card-body {
+    flex-direction: column;
     max-width: 100%;
+  }
+
+  .row,
+  .row-cols-1,
+  .row-cols-md-2,
+  .g-4 {
+    width: 100%;
+  }
+
+  .col {
+    width: 100%;
+    flex-wrap: wrap;
+    height: 50%
+
 }
 footer .columna2 .textofootercol ul li a{
     margin-left: 0;
@@ -195,10 +215,11 @@ footer .columna2 .textofootercol ul li a{
    width: 100%;
   }
 }
- 
+
 @media (max-width:768px) {
   .input-group2 {
-  flex-wrap:wrap;
+    flex-direction: column;
+    width: 100%;
   }
 
   .Tarjetaeliminar {
@@ -223,6 +244,12 @@ footer .columna2 .textofootercol ul li a{
   #texsoli {
     width: 80%;
   }
+
+
+  #tamaño {
+    width: 50%;
+  }
+
   footer .columna2 {
   width: 50%;
   padding: 0;
@@ -252,6 +279,7 @@ footer .columna3 {
 .columna3 .col, .columna3 .mb-3{
   width: 100%;
 }
+
 }
 
 @media (max-width:1024px) {
