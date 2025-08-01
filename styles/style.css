@@ -366,7 +366,7 @@ footer .card {
 .bi-facebook:hover, .bi-instagram:hover, .bi-tiktok:hover, .bi-twitter-x:hover{
   background-color: var(--color-principal2);
   border-radius: 1em;
-  height: 2.1em;
+  padding: 0.1em;
 }
 
 footer .card .RedesIMG{

@@ -34,25 +34,23 @@ main .CardIS .TextSecLOGIN a{
   margin-left: 0;
 }
 .TextSecLOGIN a:hover{
-  background-color: var(--color-seventh);
-  color: var(--color-sixth);
+  color: var(--color-secondary);
   border-radius: 0.2em;
 }
 .FormInicioSesion .ForgivePassword a:hover{
-  background-color: var(--color-fourth);
+  background-color: var(--color-seventh);
   color: var(--color-fifth);
   padding: 0.3em;
   border-radius: 1em;
 }
 main{
-  
   width: 100%;
   display: flex;
   justify-content: end;
   text-align: center; 
 }
 main{
-  background-image: url(../Assets/Img/Fondo-login-4.jpg);
+  background-image: url(../Assets/Img/Fondo-login-turnos1.png);
   background-position: left;
   background-repeat:no-repeat;
   background-size: 100% 100% ;
@@ -133,10 +131,14 @@ form{
 .BotonL a{
   width: 100%;
   margin: 0;  
+  
 }
 .BotonL:hover, .BotonL a:hover, .SectorBTN a:hover{
   background-color: var(--color-principal);
   color: var(--color-sixth);
+}
+.logoG{
+  width: 10px;
 }
 /* FOOTER */
 footer .card{
